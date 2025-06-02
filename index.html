@@ -96,6 +96,277 @@
         .avis-receipt {
             font-family: 'Helvetica', sans-serif;
         }
+        
+        .toll-receipt {
+            font-family: 'Arial', sans-serif;
+        }
+        
+        /* Enhanced Premium Receipt Styles - Based on real examples */
+        
+        /* Base receipt style */
+        .premium-receipt {
+            font-family: 'Courier New', monospace;
+            padding: 15px;
+            line-height: 1.3;
+            position: relative;
+            color: #000 !important;
+        }
+        
+        /* Restaurant receipt style (Jack Stack) */
+        .restaurant-receipt {
+            font-family: 'Courier New', monospace;
+            padding: 10px;
+            line-height: 1.2;
+            text-align: left;
+            max-width: 350px;
+            margin: 0 auto;
+            color: #000 !important;
+        }
+        
+        .restaurant-receipt .header {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        .restaurant-receipt .divider {
+            border-top: 1px dashed #aaa;
+            margin: 8px 0;
+        }
+        
+        /* Uber Eats receipt style */
+        .uber-eats-receipt {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            padding: 20px;
+            background-color: #e9ffe9;
+            border-radius: 8px;
+            max-width: 400px;
+            margin: 0 auto;
+            color: #000 !important;
+        }
+        
+        .uber-eats-receipt .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .uber-eats-receipt .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+        
+        .uber-eats-receipt .item {
+            margin-bottom: 15px;
+        }
+        
+        .uber-eats-receipt .divider {
+            border-top: 1px solid #ddd;
+            margin: 15px 0;
+        }
+        
+        .uber-eats-receipt .payment-method {
+            display: flex;
+            align-items: center;
+            margin-top: 5px;
+        }
+        
+        /* Uber ride receipt style */
+        .uber-receipt {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            padding: 20px;
+            background-color: #f0f5f9;
+            border-radius: 8px;
+            max-width: 400px;
+            margin: 0 auto;
+            color: #000 !important;
+        }
+        
+        .uber-receipt .header {
+            margin-bottom: 30px;
+        }
+        
+        .uber-receipt .title {
+            font-size: 28px;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+        
+        .uber-receipt .car-icon {
+            float: right;
+            width: 100px;
+            height: auto;
+            margin-top: 20px;
+        }
+        
+        /* Hotel receipt (Marriott) style */
+        .marriott-receipt {
+            font-family: Arial, sans-serif;
+            padding: 25px;
+            border: 1px solid #ddd;
+            max-width: 750px;
+            margin: 0 auto;
+            color: #000 !important;
+        }
+        
+        .marriott-receipt .logo {
+            max-width: 200px;
+            margin-bottom: 20px;
+        }
+        
+        .marriott-receipt .header {
+            margin-bottom: 30px;
+        }
+        
+        .marriott-receipt .guest-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-bottom: 20px;
+        }
+        
+        .marriott-receipt .charges {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        
+        .marriott-receipt .charges th, 
+        .marriott-receipt .charges td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        /* Hotel receipt (Hilton) style */
+        .hilton-receipt {
+            font-family: Georgia, serif;
+            padding: 20px;
+            color: #000 !important;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .hilton-receipt .guest-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .hilton-receipt h3 {
+            color: #004080 !important;
+            margin-bottom: 10px;
+        }
+        
+        /* Car rental receipt (Avis) style */
+        .avis-receipt {
+            font-family: Helvetica, Arial, sans-serif;
+            color: #000 !important;
+            border: 1px solid #cd0000;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .avis-receipt .header {
+            background-color: #cd0000;
+            color: white !important;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .avis-receipt .section {
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 10px;
+        }
+        
+        .avis-receipt .section-header {
+            background-color: #cd0000;
+            color: white !important;
+            padding: 8px;
+            font-weight: bold;
+        }
+        
+        .avis-receipt .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+        }
+        
+        /* Toll/Mileage receipts */
+        .toll-receipt {
+            font-family: Arial, sans-serif;
+            color: #000 !important;
+            max-width: 600px;
+            margin: 0 auto;
+            border: 1px solid #ddd;
+            padding: 20px;
+        }
+        
+        .toll-receipt .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .mileage-receipt {
+            font-family: Arial, sans-serif;
+            color: #000 !important;
+            max-width: 700px;
+            margin: 0 auto;
+            border: 1px solid #ddd;
+            padding: 20px;
+        }
+        
+        .mileage-receipt table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 15px 0;
+        }
+        
+        .mileage-receipt th,
+        .mileage-receipt td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        
+        .mileage-receipt th {
+            background-color: #f5f5f5;
+        }
+
+        /* Custom slider styles */
+        .custom-range {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 100%;
+            height: 8px;
+            background: #4a4a5e;
+            outline: none;
+            border-radius: 10px;
+        }
+
+        .custom-range::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 22px;
+            height: 22px;
+            background: #5D5CDE;
+            cursor: pointer;
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+
+        .custom-range::-moz-range-thumb {
+            width: 22px;
+            height: 22px;
+            background: #5D5CDE;
+            cursor: pointer;
+            border-radius: 50%;
+            border: 2px solid white;
+        }
     </style>
 </head>
 <body>
@@ -104,6 +375,9 @@
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <a href="#" class="text-primary font-bold text-2xl">Receipt Recreator</a>
             <div class="flex items-center space-x-4">
+                <span id="authStatus" class="text-sm">Not signed in</span>
+                <button id="signInButton" class="text-xs bg-secondary hover:bg-primary text-white px-3 py-1 rounded-md">Sign In</button>
+                <button id="signOutButton" class="text-xs bg-gray-500 hover:bg-gray-600 text-white px-3 py-1 rounded-md hidden">Sign Out</button>
                 <span id="creditDisplay" class="text-sm">Credits: <span id="creditCount">0</span></span>
                 <button id="buyCreditsButton" class="bg-primary hover:bg-secondary text-white px-4 py-2 rounded-md text-sm">Buy Credits</button>
             </div>
@@ -116,7 +390,6 @@
             <h1 class="text-4xl md:text-5xl font-bold mb-4">Lost a Receipt? Recreate It Instantly.</h1>
             <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-gray-300">Perfect for expense reports (Concur, etc.), tax deductions (IRS), or personal records. Fast, simple, and accurate.</p>
             <a href="#generator" class="btn-primary font-bold py-3 px-8 rounded-md text-lg inline-block transition">Get Started Now</a>
-            <p class="mt-4 text-sm text-gray-400">Your first receipt is free!</p>
         </div>
     </section>
 
@@ -216,33 +489,86 @@
                         </div>
                         
                         <div>
-                            <label class="block text-sm font-medium mb-1">Loyalty Number (Optional)</label>
-                            <input type="text" id="loyaltyNumber" placeholder="Rewards/Loyalty #" class="w-full rounded-md border-gray-600 bg-gray-700 text-sm">
+                            <label class="block text-sm font-medium mb-1">Loyalty Programs</label>
+                            <div class="grid grid-cols-2 gap-2 mb-2">
+                                <select id="loyaltyProgram1" class="w-full rounded-md border-gray-600 bg-gray-700 text-xs">
+                                    <option value="">Select Program</option>
+                                    <option value="Hilton Honors">Hilton Honors</option>
+                                    <option value="Marriott Bonvoy">Marriott Bonvoy</option>
+                                    <option value="IHG One">IHG One Rewards</option>
+                                    <option value="World of Hyatt">World of Hyatt</option>
+                                    <option value="AAdvantage">American AAdvantage</option>
+                                    <option value="Delta SkyMiles">Delta SkyMiles</option>
+                                    <option value="Avis Preferred">Avis Preferred</option>
+                                    <option value="Hertz Gold">Hertz Gold Plus</option>
+                                    <option value="Enterprise Plus">Enterprise Plus</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                <input type="text" id="loyaltyNumber1" placeholder="Number" class="w-full rounded-md border-gray-600 bg-gray-700 text-xs">
+                            </div>
+                            <div id="otherLoyaltyProgram1" class="hidden mb-2">
+                                <input type="text" id="otherLoyaltyName1" placeholder="Program name" class="w-full rounded-md border-gray-600 bg-gray-700 text-xs mb-1">
+                            </div>
+
+                            <div class="grid grid-cols-2 gap-2">
+                                <select id="loyaltyProgram2" class="w-full rounded-md border-gray-600 bg-gray-700 text-xs">
+                                    <option value="">Select Program</option>
+                                    <option value="Hilton Honors">Hilton Honors</option>
+                                    <option value="Marriott Bonvoy">Marriott Bonvoy</option>
+                                    <option value="IHG One">IHG One Rewards</option>
+                                    <option value="World of Hyatt">World of Hyatt</option>
+                                    <option value="AAdvantage">American AAdvantage</option>
+                                    <option value="Delta SkyMiles">Delta SkyMiles</option>
+                                    <option value="Avis Preferred">Avis Preferred</option>
+                                    <option value="Hertz Gold">Hertz Gold Plus</option>
+                                    <option value="Enterprise Plus">Enterprise Plus</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                <input type="text" id="loyaltyNumber2" placeholder="Number" class="w-full rounded-md border-gray-600 bg-gray-700 text-xs">
+                            </div>
+                            <div id="otherLoyaltyProgram2" class="hidden mt-1">
+                                <input type="text" id="otherLoyaltyName2" placeholder="Program name" class="w-full rounded-md border-gray-600 bg-gray-700 text-xs">
+                            </div>
                         </div>
                         
                         <div class="space-y-2 pt-2 border-t border-gray-700">
                             <details>
-                                <summary class="text-sm font-medium cursor-pointer">Trip & Vehicle Details (For Rentals)</summary>
+                                <summary class="text-sm font-medium cursor-pointer">Trip & Toll/Mileage Details</summary>
                                 <div class="pt-2 space-y-2">
                                     <div class="grid grid-cols-2 gap-2">
                                         <div>
-                                            <label class="block text-xs">Pickup Location</label>
-                                            <input type="text" id="pickupLocation" class="w-full text-xs rounded-md border-gray-600 bg-gray-700">
+                                            <label class="block text-xs">Home Base</label>
+                                            <input type="text" id="homeBase" class="w-full text-xs rounded-md border-gray-600 bg-gray-700" 
+                                                   placeholder="Your office/home city">
                                         </div>
                                         <div>
-                                            <label class="block text-xs">Return Location</label>
-                                            <input type="text" id="returnLocation" class="w-full text-xs rounded-md border-gray-600 bg-gray-700">
+                                            <label class="block text-xs">End Odometer</label>
+                                            <input type="number" id="endOdometer" min="0" class="w-full text-xs rounded-md border-gray-600 bg-gray-700"
+                                                   placeholder="Current mileage">
                                         </div>
                                     </div>
                                     <div class="grid grid-cols-2 gap-2">
                                         <div>
-                                            <label class="block text-xs">Vehicle</label>
-                                            <input type="text" id="vehicleModel" placeholder="e.g. JEEP GCL4 4WD" class="w-full text-xs rounded-md border-gray-600 bg-gray-700">
+                                            <label class="block text-xs">Vehicle Make</label>
+                                            <input type="text" id="vehicleMake" placeholder="Toyota, Ford, etc." class="w-full text-xs rounded-md border-gray-600 bg-gray-700">
                                         </div>
                                         <div>
-                                            <label class="block text-xs">License Plate</label>
-                                            <input type="text" id="licensePlate" class="w-full text-xs rounded-md border-gray-600 bg-gray-700">
+                                            <label class="block text-xs">Vehicle Model</label>
+                                            <input type="text" id="vehicleModel" placeholder="Camry, F-150, etc." class="w-full text-xs rounded-md border-gray-600 bg-gray-700">
                                         </div>
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs">Toll Pass System</label>
+                                        <select id="tollPassSystem" class="w-full text-xs rounded-md border-gray-600 bg-gray-700">
+                                            <option value="E-ZPass">E-ZPass (Eastern US)</option>
+                                            <option value="SunPass">SunPass (FL, GA, NC)</option>
+                                            <option value="FasTrak">FasTrak (California)</option>
+                                            <option value="TxTag">TxTag (TX, KS, OK)</option>
+                                            <option value="I-Pass">I-Pass (Illinois)</option>
+                                            <option value="PeachPass">PeachPass (Georgia)</option>
+                                            <option value="NC Quick Pass">NC Quick Pass (North Carolina)</option>
+                                            <option value="Other">Other</option>
+                                        </select>
                                     </div>
                                 </div>
                             </details>
@@ -274,6 +600,9 @@
                             </li>
                             <li class="mr-1">
                                 <a href="#" id="manualTabLink" class="inline-block px-4 py-2 border-l border-t border-r rounded-t text-gray-400 hover:text-primary">Manual Entry</a>
+                            </li>
+                            <li class="mr-1">
+                                <a href="#" id="mileageTabLink" class="inline-block px-4 py-2 border-l border-t border-r rounded-t text-gray-400 hover:text-primary">Mileage & Tolls</a>
                             </li>
                         </ul>
                         
@@ -346,6 +675,61 @@
                             </div>
                         </div>
                         
+                        <!-- Mileage & Tolls Tab Content -->
+                        <div id="mileageTabContent" class="mt-4 hidden">
+                            <div class="grid md:grid-cols-2 gap-4 mb-4">
+                                <div>
+                                    <h3 class="font-semibold mb-3">Mileage Log Generator</h3>
+                                    <div class="grid grid-cols-2 gap-3 mb-3">
+                                        <div>
+                                            <label for="mileageStartDate" class="block mb-1 text-sm font-medium">Start Date</label>
+                                            <input type="date" id="mileageStartDate" class="w-full px-3 py-2 border border-gray-600 bg-gray-700 rounded-md focus:outline-none focus:ring-primary focus:border-primary">
+                                        </div>
+                                        <div>
+                                            <label for="mileageEndDate" class="block mb-1 text-sm font-medium">End Date</label>
+                                            <input type="date" id="mileageEndDate" class="w-full px-3 py-2 border border-gray-600 bg-gray-700 rounded-md focus:outline-none focus:ring-primary focus:border-primary">
+                                        </div>
+                                        <div>
+                                            <label for="totalMileage" class="block mb-1 text-sm font-medium">Total Mileage</label>
+                                            <input type="number" id="totalMileage" placeholder="e.g., 1200" min="1" class="w-full px-3 py-2 border border-gray-600 bg-gray-700 rounded-md focus:outline-none focus:ring-primary focus:border-primary">
+                                        </div>
+                                        <div>
+                                            <label for="numTrips" class="block mb-1 text-sm font-medium">Number of Trips</label>
+                                            <input type="number" id="numTrips" placeholder="10" min="1" value="10" class="w-full px-3 py-2 border border-gray-600 bg-gray-700 rounded-md focus:outline-none focus:ring-primary focus:border-primary">
+                                        </div>
+                                    </div>
+                                    <button id="generateMileageLogButton" class="bg-primary hover:bg-secondary text-white font-semibold py-2 px-4 rounded w-full">
+                                        Generate Mileage Log
+                                    </button>
+                                </div>
+                                
+                                <div>
+                                    <h3 class="font-semibold mb-3">Toll Receipt Generator</h3>
+                                    <div class="grid grid-cols-2 gap-3 mb-3">
+                                        <div>
+                                            <label for="tollStartDate" class="block mb-1 text-sm font-medium">Start Date</label>
+                                            <input type="date" id="tollStartDate" class="w-full px-3 py-2 border border-gray-600 bg-gray-700 rounded-md focus:outline-none focus:ring-primary focus:border-primary">
+                                        </div>
+                                        <div>
+                                            <label for="tollEndDate" class="block mb-1 text-sm font-medium">End Date</label>
+                                            <input type="date" id="tollEndDate" class="w-full px-3 py-2 border border-gray-600 bg-gray-700 rounded-md focus:outline-none focus:ring-primary focus:border-primary">
+                                        </div>
+                                        <div>
+                                            <label for="totalTollAmount" class="block mb-1 text-sm font-medium">Total Amount</label>
+                                            <input type="number" id="totalTollAmount" placeholder="e.g., 150.00" min="0.01" step="0.01" class="w-full px-3 py-2 border border-gray-600 bg-gray-700 rounded-md focus:outline-none focus:ring-primary focus:border-primary">
+                                        </div>
+                                        <div>
+                                            <label for="numTolls" class="block mb-1 text-sm font-medium">Number of Tolls</label>
+                                            <input type="number" id="numTolls" placeholder="8" min="1" value="8" class="w-full px-3 py-2 border border-gray-600 bg-gray-700 rounded-md focus:outline-none focus:ring-primary focus:border-primary">
+                                        </div>
+                                    </div>
+                                    <button id="generateTollReceiptButton" class="bg-primary hover:bg-secondary text-white font-semibold py-2 px-4 rounded w-full">
+                                        Generate Toll Receipts
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
                         <!-- Parsed Expenses Table -->
                         <div id="parsedExpenses" class="hidden mt-6">
                             <h3 class="font-semibold text-lg mb-2">Expense List</h3>
@@ -409,23 +793,42 @@
     <section class="py-16 bg-gray-900">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-4">Flexible Pricing</h2>
-            <p class="text-center max-w-2xl mx-auto mb-12 text-gray-400">Your first receipt is free! After that, buy credits as you need them. 1 Credit = 1 Basic Receipt, 2 Credits = 1 Premium Receipt.</p>
+            <p class="text-center max-w-2xl mx-auto mb-12 text-gray-400">Buy credits as you need them. 1 Credit = 1 Basic Receipt, 2 Credits = 1 Premium Receipt, 1 Credit per Toll/Mileage Line.</p>
             
             <div class="flex flex-wrap justify-center gap-8">
+                <!-- Single Receipt -->
+                <div class="price-card bg-dark rounded-xl shadow-lg overflow-hidden max-w-xs w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1">Single Receipt</h3>
+                        <p class="text-gray-400 text-sm mb-4">Quick solution for one-time use</p>
+                        
+                        <div class="mb-4">
+                            <span class="text-4xl font-bold">$2.99</span>
+                            <span class="text-gray-400 text-sm ml-1">1 Credit</span>
+                        </div>
+                        
+                        <p class="text-sm text-gray-400 mb-6">($2.99 / receipt)</p>
+                        
+                        <button class="buy-credits-btn w-full bg-primary hover:bg-secondary text-white font-semibold py-2 px-4 rounded-md" data-plan="single" data-credits="1" data-price="2.99">
+                            Buy 1 Credit
+                        </button>
+                    </div>
+                </div>
+                
                 <!-- Starter Pack -->
                 <div class="price-card bg-dark rounded-xl shadow-lg overflow-hidden max-w-xs w-full">
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-1">Starter Pack</h3>
-                        <p class="text-gray-400 text-sm mb-4">Perfect for occasional use</p>
+                        <p class="text-gray-400 text-sm mb-4">Perfect for tax season needs</p>
                         
                         <div class="mb-4">
-                            <span class="text-4xl font-bold">$4.99</span>
+                            <span class="text-4xl font-bold">$9.99</span>
                             <span class="text-gray-400 text-sm ml-1">5 Credits</span>
                         </div>
                         
-                        <p class="text-sm text-gray-400 mb-6">($1.00 / receipt)</p>
+                        <p class="text-sm text-gray-400 mb-6">($2.00 / receipt)</p>
                         
-                        <button class="buy-credits-btn w-full bg-primary hover:bg-secondary text-white font-semibold py-2 px-4 rounded-md" data-plan="starter" data-credits="5" data-price="4.99">
+                        <button class="buy-credits-btn w-full bg-primary hover:bg-secondary text-white font-semibold py-2 px-4 rounded-md" data-plan="starter" data-credits="5" data-price="9.99">
                             Buy 5 Credits
                         </button>
                     </div>
@@ -438,48 +841,95 @@
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-1">Value Pack</h3>
-                        <p class="text-gray-400 text-sm mb-4">Best value for regular users</p>
+                        <p class="text-gray-400 text-sm mb-4">Best for quarterly expenses</p>
                         
                         <div class="mb-4">
-                            <span class="text-4xl font-bold">$9.99</span>
+                            <span class="text-4xl font-bold">$19.99</span>
                             <span class="text-gray-400 text-sm ml-1">15 Credits</span>
                         </div>
                         
-                        <p class="text-sm text-gray-400 mb-6">($0.67 / receipt)</p>
+                        <p class="text-sm text-gray-400 mb-6">($1.33 / receipt)</p>
                         
-                        <button class="buy-credits-btn w-full bg-primary hover:bg-secondary text-white font-semibold py-2 px-4 rounded-md" data-plan="value" data-credits="15" data-price="9.99">
+                        <button class="buy-credits-btn w-full bg-primary hover:bg-secondary text-white font-semibold py-2 px-4 rounded-md" data-plan="value" data-credits="15" data-price="19.99">
                             Buy 15 Credits
                         </button>
                     </div>
                 </div>
                 
-                <!-- Bulk Pack -->
+                <!-- Business Pack -->
                 <div class="price-card bg-dark rounded-xl shadow-lg overflow-hidden max-w-xs w-full">
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-1">Bulk Pack</h3>
-                        <p class="text-gray-400 text-sm mb-4">Ideal for frequent travelers</p>
+                        <h3 class="text-xl font-bold mb-1">Business Pack</h3>
+                        <p class="text-gray-400 text-sm mb-4">For frequent business travelers</p>
                         
                         <div class="mb-4">
-                            <span class="text-4xl font-bold">$19.99</span>
+                            <span class="text-4xl font-bold">$39.99</span>
                             <span class="text-gray-400 text-sm ml-1">50 Credits</span>
                         </div>
                         
-                        <p class="text-sm text-gray-400 mb-6">($0.40 / receipt)</p>
+                        <p class="text-sm text-gray-400 mb-6">($0.80 / receipt)</p>
                         
-                        <button class="buy-credits-btn w-full bg-primary hover:bg-secondary text-white font-semibold py-2 px-4 rounded-md" data-plan="bulk" data-credits="50" data-price="19.99">
+                        <button class="buy-credits-btn w-full bg-primary hover:bg-secondary text-white font-semibold py-2 px-4 rounded-md" data-plan="business" data-credits="50" data-price="39.99">
                             Buy 50 Credits
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Enterprise Pack -->
+                <div class="price-card bg-dark rounded-xl shadow-lg overflow-hidden max-w-xs w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1">Enterprise Pack</h3>
+                        <p class="text-gray-400 text-sm mb-4">For business compliance needs</p>
+                        
+                        <div class="mb-4">
+                            <span class="text-4xl font-bold">$149.99</span>
+                            <span class="text-gray-400 text-sm ml-1">300 Credits</span>
+                        </div>
+                        
+                        <p class="text-sm text-gray-400 mb-6">($0.50 / receipt)</p>
+                        
+                        <button class="buy-credits-btn w-full bg-primary hover:bg-secondary text-white font-semibold py-2 px-4 rounded-md" data-plan="enterprise" data-credits="300" data-price="149.99">
+                            Buy 300 Credits
                         </button>
                     </div>
                 </div>
             </div>
             
-            <p class="text-center mt-8 text-sm text-gray-400">All transactions are secure and no account is needed. Credits are stored locally in your browser.</p>
+            <!-- Custom Credit Amount Slider (NEW) -->
+            <div class="max-w-2xl mx-auto mt-12 bg-dark rounded-xl shadow-lg p-6">
+                <h3 class="text-xl font-bold mb-4">Custom Credit Amount</h3>
+                <p class="text-gray-400 text-sm mb-6">Need a specific number of credits? Choose your amount below:</p>
+                
+                <div class="mb-6">
+                    <input type="range" id="customCreditsSlider" min="50" max="1000" step="50" value="50" class="custom-range w-full mb-2">
+                    <div class="flex justify-between text-xs text-gray-400">
+                        <span>50</span>
+                        <span>250</span>
+                        <span>500</span>
+                        <span>750</span>
+                        <span>1000</span>
+                    </div>
+                </div>
+                
+                <div class="flex justify-between items-center">
+                    <div>
+                        <span id="customCreditsAmount" class="text-3xl font-bold">50</span>
+                        <span class="text-gray-400 text-sm ml-1">Credits</span>
+                        <p class="text-gray-400 text-sm mt-1">$<span id="customCreditsPrice">40.00</span> ($<span id="customCreditUnitPrice">0.80</span> / receipt)</p>
+                    </div>
+                    <button id="buyCustomCreditsBtn" class="bg-primary hover:bg-secondary text-white font-semibold py-2 px-4 rounded-md" data-plan="custom">
+                        Buy Credits
+                    </button>
+                </div>
+            </div>
+            
+            <p class="text-center mt-8 text-sm text-gray-400">All transactions are secure via Stripe. Credits are stored in your account.</p>
         </div>
     </section>
 
     <!-- Receipt Viewer Modal -->
     <div id="receiptModal" class="fixed inset-0 bg-black bg-opacity-75 hidden flex items-center justify-center z-50">
-        <div class="bg-gray-800 p-6 rounded-lg shadow-lg max-w-3xl w-full mx-4 max-h-[90vh] overflow-y-auto relative">
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg max-w-4xl w-full mx-4 max-h-[90vh] overflow-y-auto relative">
             <!-- Close button -->
             <button id="closeModal" class="absolute top-4 right-4 text-gray-400 hover:text-gray-200">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -493,13 +943,82 @@
                 <p id="receiptCounter" class="text-sm text-gray-400">Receipt 1 of 1</p>
             </div>
             
-            <!-- Receipt content -->
-            <div id="receiptContent" class="bg-white p-4 border border-gray-200 mb-4 text-gray-800 receipt-preview receipt-text">
-                <!-- Receipt will be generated here -->
+            <div class="flex flex-col md:flex-row gap-4">
+                <!-- Receipt Preview Panel -->
+                <div class="md:w-7/12">
+                    <h3 class="font-semibold mb-2">Preview</h3>
+                    <div id="receiptContent" class="bg-white p-4 border border-gray-200 mb-4 text-gray-800 receipt-preview receipt-text">
+                        <!-- Receipt will be generated here -->
+                    </div>
+                </div>
+                
+                <!-- Edit Panel -->
+                <div class="md:w-5/12 bg-gray-700 p-4 rounded-lg">
+                    <h3 class="font-semibold mb-3">Edit Receipt Details</h3>
+                    <div class="space-y-3">
+                        <div>
+                            <label for="editVendor" class="block text-sm font-medium mb-1">Vendor/Merchant</label>
+                            <input type="text" id="editVendor" class="w-full rounded-md border-gray-600 bg-gray-600 text-sm px-3 py-2">
+                        </div>
+                        
+                        <div>
+                            <label for="editLocation" class="block text-sm font-medium mb-1">Location</label>
+                            <input type="text" id="editLocation" class="w-full rounded-md border-gray-600 bg-gray-600 text-sm px-3 py-2">
+                        </div>
+                        
+                        <div class="grid grid-cols-2 gap-2">
+                            <div>
+                                <label for="editDate" class="block text-sm font-medium mb-1">Date</label>
+                                <input type="date" id="editDate" class="w-full rounded-md border-gray-600 bg-gray-600 text-sm px-3 py-2">
+                            </div>
+                            <div>
+                                <label for="editTime" class="block text-sm font-medium mb-1">Time</label>
+                                <input type="time" id="editTime" class="w-full rounded-md border-gray-600 bg-gray-600 text-sm px-3 py-2">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="editAmount" class="block text-sm font-medium mb-1">Amount</label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                    <span class="text-gray-400">$</span>
+                                </div>
+                                <input type="number" id="editAmount" step="0.01" min="0" class="w-full pl-7 px-3 py-2 rounded-md border-gray-600 bg-gray-600 text-sm">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="editTaxRate" class="block text-sm font-medium mb-1">Tax Rate (%)</label>
+                            <input type="number" id="editTaxRate" step="0.01" min="0" class="w-full rounded-md border-gray-600 bg-gray-600 text-sm px-3 py-2">
+                        </div>
+                        
+                        <div>
+                            <label for="editPaymentMethod" class="block text-sm font-medium mb-1">Payment Method</label>
+                            <div class="grid grid-cols-2 gap-2">
+                                <select id="editPaymentMethod" class="w-full rounded-md border-gray-600 bg-gray-600 text-sm px-3 py-2">
+                                    <option value="AMEX">American Express</option>
+                                    <option value="VISA">Visa</option>
+                                    <option value="MC">MasterCard</option>
+                                    <option value="DISC">Discover</option>
+                                    <option value="Apple Pay">Apple Pay</option>
+                                    <option value="Corporate Card">Corporate Card</option>
+                                    <option value="Cash">Cash</option>
+                                </select>
+                                <input type="text" id="editLastFour" placeholder="Last 4 digits" maxlength="4" class="w-full rounded-md border-gray-600 bg-gray-600 text-sm px-3 py-2">
+                            </div>
+                        </div>
+                        
+                        <div class="pt-3">
+                            <button id="applyEditsBtn" class="w-full bg-primary hover:bg-secondary text-white font-semibold py-2 px-4 rounded-md">
+                                Apply Changes
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
             
             <!-- Navigation buttons -->
-            <div class="flex justify-between items-center mb-4">
+            <div class="flex justify-between items-center my-4">
                 <button id="prevReceiptBtn" class="bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-md">
                     Previous
                 </button>
@@ -541,6 +1060,50 @@
             </div>
         </div>
     </div>
+    
+    <!-- Sign In Modal -->
+    <div id="signInModal" class="fixed inset-0 bg-black bg-opacity-75 hidden flex items-center justify-center z-50">
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg max-w-md w-full mx-4">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-xl font-bold text-primary">Sign In</h2>
+                <button id="closeSignInModal" class="text-gray-400 hover:text-gray-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="space-y-4">
+                <div>
+                    <label for="email" class="block text-sm font-medium mb-1">Email</label>
+                    <input type="email" id="email" class="w-full rounded-md border-gray-600 bg-gray-700 text-sm px-3 py-2" placeholder="your@email.com">
+                </div>
+                
+                <div>
+                    <label for="password" class="block text-sm font-medium mb-1">Password</label>
+                    <input type="password" id="password" class="w-full rounded-md border-gray-600 bg-gray-700 text-sm px-3 py-2" placeholder="••••••••">
+                </div>
+                
+                <div class="pt-2">
+                    <button id="confirmSignIn" class="w-full bg-primary hover:bg-secondary text-white font-semibold py-2 px-4 rounded">
+                        Sign In
+                    </button>
+                </div>
+                
+                <div class="text-center">
+                    <p class="text-sm text-gray-400">Or continue with</p>
+                    <div class="flex justify-center gap-4 mt-3">
+                        <button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded">
+                            <i class="fab fa-google mr-2"></i> Google
+                        </button>
+                        <button class="bg-gray-600 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded">
+                            <i class="fab fa-apple mr-2"></i> Apple
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="bg-darker py-8">
@@ -562,7 +1125,222 @@
         </div>
     </footer>
 
+    <!-- Firebase and External Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-functions-compat.js"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+
     <script>
+        // Firebase configuration (to be replaced with actual values)
+        const firebaseConfig = {
+            apiKey: "YOUR_API_KEY",
+            authDomain: "your-app.firebaseapp.com",
+            projectId: "your-app-id",
+            storageBucket: "your-app.appspot.com",
+            messagingSenderId: "YOUR_SENDER_ID",
+            appId: "YOUR_APP_ID"
+        };
+
+        // Initialize Firebase (commented out for now)
+        // firebase.initializeApp(firebaseConfig);
+        
+        // Stripe publishable key (to be replaced with actual value)
+        // const stripePublishableKey = 'pk_test_your_key_here';
+        // const stripe = Stripe(stripePublishableKey);
+    </script>
+
+    <script>
+        // API Integration Helpers - For future use in other applications
+        window.ReceiptGenerator = {
+            // Initialize the Receipt Generator API
+            init: function(config = {}) {
+                this.apiKey = config.apiKey || null;
+                this.userId = config.userId || null;
+                this.onReady = config.onReady || function() {};
+                this.onError = config.onError || function(error) { console.error('Receipt Generator API Error:', error); };
+                
+                // Check if we're running as an embedded component
+                this.isEmbedded = window.location !== window.parent.location;
+                
+                // Fire the ready event
+                setTimeout(() => {
+                    this.onReady({
+                        status: 'ready',
+                        isEmbedded: this.isEmbedded
+                    });
+                }, 100);
+                
+                return this;
+            },
+            
+            // Generate a receipt with the provided data
+            generateReceipt: function(receiptData, options = {}) {
+                return new Promise((resolve, reject) => {
+                    try {
+                        // This would be replaced with actual receipt generation in production
+                        const format = options.format || 'html';
+                        const quality = options.quality || 'basic';
+                        
+                        // Simulated processing time
+                        setTimeout(() => {
+                            resolve({
+                                status: 'success',
+                                receipt: {
+                                    html: '<div class="receipt">Sample Receipt Content</div>',
+                                    data: receiptData,
+                                    format: format,
+                                    id: 'receipt_' + Date.now()
+                                }
+                            });
+                        }, 500);
+                    } catch (error) {
+                        reject({
+                            status: 'error',
+                            message: error.message || 'Failed to generate receipt'
+                        });
+                    }
+                });
+            },
+            
+            // Get user's credit balance
+            getCredits: function() {
+                return new Promise((resolve) => {
+                    // This would interact with Firebase in production
+                    const credits = localStorage.getItem('receiptCredits') ? 
+                        parseInt(localStorage.getItem('receiptCredits')) : 0;
+                        
+                    resolve({
+                        status: 'success',
+                        credits: credits
+                    });
+                });
+            },
+            
+            // Add credits to the user's account
+            addCredits: function(amount) {
+                return new Promise((resolve) => {
+                    // This would interact with Firebase in production
+                    let credits = localStorage.getItem('receiptCredits') ? 
+                        parseInt(localStorage.getItem('receiptCredits')) : 0;
+                    
+                    credits += amount;
+                    localStorage.setItem('receiptCredits', credits);
+                    
+                    resolve({
+                        status: 'success',
+                        credits: credits
+                    });
+                });
+            }
+        };
+        
+        // Helper function for formatting dates properly (fixing the '3ar' bug)
+        function formatDate(date, format = 'MMM DD, YYYY') {
+            if (!date) return '';
+            
+            const months = [
+                'January', 'February', 'March', 'April', 'May', 'June',
+                'July', 'August', 'September', 'October', 'November', 'December'
+            ];
+            
+            const shortMonths = [
+                'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+                'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'
+            ];
+            
+            const day = date.getDate();
+            const month = date.getMonth();
+            const year = date.getFullYear();
+            
+            // Replace patterns in the format string
+            let result = format;
+            result = result.replace('YYYY', year);
+            result = result.replace('YY', String(year).slice(-2));
+            result = result.replace('MMMM', months[month]);
+            result = result.replace('MMM', shortMonths[month]);
+            result = result.replace('MM', String(month + 1).padStart(2, '0'));
+            result = result.replace('M', month + 1);
+            result = result.replace('DD', String(day).padStart(2, '0'));
+            result = result.replace('D', day);
+            
+            return result;
+        }
+        
+        // Format time function
+        function formatTime(date) {
+            if (!date) return '';
+            
+            const hours = date.getHours();
+            const minutes = date.getMinutes();
+            const ampm = hours >= 12 ? 'PM' : 'AM';
+            
+            const formattedHours = hours % 12 || 12; // Convert 0 to 12
+            const formattedMinutes = String(minutes).padStart(2, '0');
+            
+            return `${formattedHours}:${formattedMinutes} ${ampm}`;
+        }
+    
+        // Custom credit slider logic
+        document.addEventListener('DOMContentLoaded', function() {
+            const customCreditsSlider = document.getElementById('customCreditsSlider');
+            const customCreditsAmount = document.getElementById('customCreditsAmount');
+            const customCreditsPrice = document.getElementById('customCreditsPrice');
+            const customCreditUnitPrice = document.getElementById('customCreditUnitPrice');
+            const buyCustomCreditsBtn = document.getElementById('buyCustomCreditsBtn');
+            
+            // Calculate price based on credits - updated to match enterprise pricing
+            function calculateCustomPrice(credits) {
+                let unitPrice;
+                
+                if (credits < 100) {
+                    unitPrice = 0.80; // $0.80 per credit (similar to Business Pack)
+                } else if (credits < 250) {
+                    unitPrice = 0.70; // $0.70 per credit
+                } else if (credits < 500) {
+                    unitPrice = 0.60; // $0.60 per credit
+                } else if (credits < 750) {
+                    unitPrice = 0.55; // $0.55 per credit
+                } else {
+                    unitPrice = 0.50; // $0.50 per credit (same as Enterprise Pack)
+                }
+                
+                const totalPrice = (credits * unitPrice).toFixed(2);
+                return { totalPrice, unitPrice };
+            }
+            
+            // Update custom credit display
+            customCreditsSlider.addEventListener('input', function() {
+                const credits = parseInt(this.value);
+                const { totalPrice, unitPrice } = calculateCustomPrice(credits);
+                
+                customCreditsAmount.textContent = credits;
+                customCreditsPrice.textContent = totalPrice;
+                customCreditUnitPrice.textContent = unitPrice.toFixed(2);
+                
+                // Update button data
+                buyCustomCreditsBtn.dataset.credits = credits;
+                buyCustomCreditsBtn.dataset.price = totalPrice;
+            });
+            
+            // Initialize with default value
+            const defaultCredits = parseInt(customCreditsSlider.value);
+            const { totalPrice, unitPrice } = calculateCustomPrice(defaultCredits);
+            customCreditsAmount.textContent = defaultCredits;
+            customCreditsPrice.textContent = totalPrice;
+            customCreditUnitPrice.textContent = unitPrice.toFixed(2);
+            buyCustomCreditsBtn.dataset.credits = defaultCredits;
+            buyCustomCreditsBtn.dataset.price = totalPrice;
+            
+            // Add click handler for custom credits button
+            buyCustomCreditsBtn.addEventListener('click', function() {
+                const creditsToAdd = parseInt(this.dataset.credits);
+                addCredits(creditsToAdd); // This will be replaced with Stripe flow in production
+                alert(`Added ${creditsToAdd} credits to your account!`);
+            });
+        });
+
         // Main app logic
         document.addEventListener('DOMContentLoaded', function() {
             // Initialize credits from localStorage or set default
@@ -573,8 +1351,10 @@
             const tabElements = {
                 pasteTabLink: document.getElementById('pasteTabLink'),
                 manualTabLink: document.getElementById('manualTabLink'),
+                mileageTabLink: document.getElementById('mileageTabLink'),
                 pasteTabContent: document.getElementById('pasteTabContent'),
-                manualTabContent: document.getElementById('manualTabContent')
+                manualTabContent: document.getElementById('manualTabContent'),
+                mileageTabContent: document.getElementById('mileageTabContent')
             };
             
             const expenseInput = document.getElementById('expenseInput');
@@ -594,6 +1374,25 @@
             const downloadPdf = document.getElementById('downloadPdf');
             const downloadPng = document.getElementById('downloadPng');
             
+            // Auth elements
+            const authStatus = document.getElementById('authStatus');
+            const signInButton = document.getElementById('signInButton');
+            const signOutButton = document.getElementById('signOutButton');
+            const signInModal = document.getElementById('signInModal');
+            const closeSignInModal = document.getElementById('closeSignInModal');
+            const confirmSignIn = document.getElementById('confirmSignIn');
+            
+            // Loyalty program dropdowns
+            const loyaltyProgram1 = document.getElementById('loyaltyProgram1');
+            const loyaltyNumber1 = document.getElementById('loyaltyNumber1');
+            const otherLoyaltyProgram1 = document.getElementById('otherLoyaltyProgram1');
+            const otherLoyaltyName1 = document.getElementById('otherLoyaltyName1');
+            
+            const loyaltyProgram2 = document.getElementById('loyaltyProgram2');
+            const loyaltyNumber2 = document.getElementById('loyaltyNumber2');
+            const otherLoyaltyProgram2 = document.getElementById('otherLoyaltyProgram2');
+            const otherLoyaltyName2 = document.getElementById('otherLoyaltyName2');
+            
             // Manual entry elements
             const manualVendor = document.getElementById('manualVendor');
             const manualLocation = document.getElementById('manualLocation');
@@ -603,6 +1402,34 @@
             const hotelNights = document.getElementById('hotelNights');
             const hotelNightsContainer = document.getElementById('hotelNightsContainer');
             const addManualExpenseButton = document.getElementById('addManualExpenseButton');
+            
+            // Mileage & toll log elements
+            const mileageStartDate = document.getElementById('mileageStartDate');
+            const mileageEndDate = document.getElementById('mileageEndDate');
+            const totalMileage = document.getElementById('totalMileage');
+            const numTrips = document.getElementById('numTrips');
+            const generateMileageLogButton = document.getElementById('generateMileageLogButton');
+            
+            const tollStartDate = document.getElementById('tollStartDate');
+            const tollEndDate = document.getElementById('tollEndDate');
+            const totalTollAmount = document.getElementById('totalTollAmount');
+            const numTolls = document.getElementById('numTolls');
+            const generateTollReceiptButton = document.getElementById('generateTollReceiptButton');
+            
+            // Fix: Clear sample data when new content is pasted into the field
+            expenseInput.addEventListener('paste', function(e) {
+                // Clear the field when pasting
+                this.value = '';
+            });
+            
+            // Show/hide Other loyalty program field
+            loyaltyProgram1.addEventListener('change', function() {
+                otherLoyaltyProgram1.classList.toggle('hidden', this.value !== 'Other');
+            });
+            
+            loyaltyProgram2.addEventListener('change', function() {
+                otherLoyaltyProgram2.classList.toggle('hidden', this.value !== 'Other');
+            });
             
             // Show/hide hotel nights field based on expense type
             manualType.addEventListener('change', function() {
@@ -632,6 +1459,42 @@
             // Receipt quality elements
             const basicQuality = document.getElementById('basicQuality');
             const proQuality = document.getElementById('proQuality');
+            
+            // Receipt editor functionality
+            const editVendor = document.getElementById('editVendor');
+            const editLocation = document.getElementById('editLocation');
+            const editDate = document.getElementById('editDate');
+            const editTime = document.getElementById('editTime');
+            const editAmount = document.getElementById('editAmount');
+            const editTaxRate = document.getElementById('editTaxRate');
+            const editPaymentMethod = document.getElementById('editPaymentMethod');
+            const editLastFour = document.getElementById('editLastFour');
+            const applyEditsBtn = document.getElementById('applyEditsBtn');
+            
+            // Auth handling (for modal approach)
+            signInButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                signInModal.classList.remove('hidden');
+            });
+            
+            closeSignInModal.addEventListener('click', function() {
+                signInModal.classList.add('hidden');
+            });
+            
+            confirmSignIn.addEventListener('click', function() {
+                // This would be replaced with Firebase authentication
+                authStatus.textContent = 'User';
+                signInButton.classList.add('hidden');
+                signOutButton.classList.remove('hidden');
+                signInModal.classList.add('hidden');
+            });
+            
+            signOutButton.addEventListener('click', function() {
+                // This will be replaced with Firebase authentication
+                authStatus.textContent = 'Not signed in';
+                signInButton.classList.remove('hidden');
+                signOutButton.classList.add('hidden');
+            });
             
             // Sample expense data for testing
             const sampleData = `Available Expenses
@@ -664,10 +1527,14 @@ $21.70`;
                 expenseInput.value = sampleData;
             }
             
-            // Set default date for manual entry to today
+            // Set default dates for all date fields to today
             const today = new Date();
             const formattedDate = today.toISOString().substr(0, 10);
             manualDate.value = formattedDate;
+            mileageStartDate.value = formattedDate;
+            mileageEndDate.value = formattedDate;
+            tollStartDate.value = formattedDate;
+            tollEndDate.value = formattedDate;
             
             // Store parsed expenses
             let expenses = [];
@@ -695,26 +1562,35 @@ $21.70`;
                 setActiveTab('manual');
             });
             
+            tabElements.mileageTabLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                setActiveTab('mileage');
+            });
+            
             function setActiveTab(tabName) {
                 // Reset all tabs
-                tabElements.pasteTabLink.classList.remove('text-primary', 'bg-gray-800', 'font-medium');
-                tabElements.pasteTabLink.classList.add('text-gray-400', 'hover:text-primary');
-                
-                tabElements.manualTabLink.classList.remove('text-primary', 'bg-gray-800', 'font-medium');
-                tabElements.manualTabLink.classList.add('text-gray-400', 'hover:text-primary');
-                
-                tabElements.pasteTabContent.classList.add('hidden');
-                tabElements.manualTabContent.classList.add('hidden');
+                Object.keys(tabElements).forEach(key => {
+                    if (key.includes('TabLink')) {
+                        tabElements[key].classList.remove('text-primary', 'bg-gray-800', 'font-medium');
+                        tabElements[key].classList.add('text-gray-400', 'hover:text-primary');
+                    } else if (key.includes('TabContent')) {
+                        tabElements[key].classList.add('hidden');
+                    }
+                });
                 
                 // Set active tab
                 if (tabName === 'paste') {
                     tabElements.pasteTabLink.classList.remove('text-gray-400', 'hover:text-primary');
                     tabElements.pasteTabLink.classList.add('text-primary', 'bg-gray-800', 'font-medium');
                     tabElements.pasteTabContent.classList.remove('hidden');
-                } else {
+                } else if (tabName === 'manual') {
                     tabElements.manualTabLink.classList.remove('text-gray-400', 'hover:text-primary');
                     tabElements.manualTabLink.classList.add('text-primary', 'bg-gray-800', 'font-medium');
                     tabElements.manualTabContent.classList.remove('hidden');
+                } else if (tabName === 'mileage') {
+                    tabElements.mileageTabLink.classList.remove('text-gray-400', 'hover:text-primary');
+                    tabElements.mileageTabLink.classList.add('text-primary', 'bg-gray-800', 'font-medium');
+                    tabElements.mileageTabContent.classList.remove('hidden');
                 }
             }
             
@@ -795,18 +1671,133 @@ $21.70`;
                 }
             };
             
+            // Toll data by region
+            const tollData = {
+                'E-ZPass': {
+                    states: ['NY', 'NJ', 'PA', 'DE', 'MD', 'VA', 'WV', 'NC', 'OH', 'IN', 'IL', 'ME', 'NH', 'MA', 'RI', 'KY'],
+                    locations: [
+                        { name: 'George Washington Bridge', min: 11.75, max: 16.00 },
+                        { name: 'Lincoln Tunnel', min: 11.75, max: 16.00 },
+                        { name: 'Holland Tunnel', min: 11.75, max: 16.00 },
+                        { name: 'Verrazano-Narrows Bridge', min: 12.24, max: 19.00 },
+                        { name: 'Goethals Bridge', min: 11.75, max: 16.00 },
+                        { name: 'Outerbridge Crossing', min: 11.75, max: 16.00 },
+                        { name: 'Bayonne Bridge', min: 11.75, max: 16.00 },
+                        { name: 'New Jersey Turnpike', min: 3.50, max: 18.85 },
+                        { name: 'Pennsylvania Turnpike', min: 1.80, max: 47.65 },
+                        { name: 'New York State Thruway', min: 0.55, max: 22.25 },
+                        { name: 'Ohio Turnpike', min: 1.25, max: 15.00 },
+                        { name: 'Indiana Toll Road', min: 2.30, max: 12.28 },
+                        { name: 'Massachusetts Turnpike', min: 1.70, max: 7.10 }
+                    ]
+                },
+                'SunPass': {
+                    states: ['FL', 'GA', 'NC'],
+                    locations: [
+                        { name: 'Florida Turnpike', min: 1.07, max: 17.80 },
+                        { name: 'Alligator Alley', min: 2.84, max: 3.34 },
+                        { name: 'Sawgrass Expressway', min: 1.07, max: 2.14 },
+                        { name: 'Sunshine Skyway Bridge', min: 1.07, max: 1.07 },
+                        { name: 'Selmon Expressway', min: 1.07, max: 2.14 },
+                        { name: 'I-75 Express', min: 0.50, max: 10.50 },
+                        { name: 'I-95 Express', min: 0.50, max: 10.50 },
+                        { name: '836 Dolphin Expressway', min: 1.07, max: 2.14 }
+                    ]
+                },
+                'FasTrak': {
+                    states: ['CA'],
+                    locations: [
+                        { name: 'Golden Gate Bridge', min: 8.05, max: 9.05 },
+                        { name: 'Bay Bridge', min: 5.50, max: 7.00 },
+                        { name: 'San Mateo Bridge', min: 5.50, max: 7.00 },
+                        { name: 'Dumbarton Bridge', min: 5.50, max: 7.00 },
+                        { name: 'Carquinez Bridge', min: 5.50, max: 7.00 },
+                        { name: 'Richmond-San Rafael Bridge', min: 5.50, max: 7.00 },
+                        { name: 'Benicia-Martinez Bridge', min: 5.50, max: 7.00 },
+                        { name: 'Antioch Bridge', min: 5.50, max: 7.00 },
+                        { name: '91 Express Lanes', min: 1.65, max: 12.60 },
+                        { name: 'SR-237 Express Lanes', min: 0.50, max: 8.00 },
+                        { name: 'I-680 Express Lanes', min: 0.50, max: 8.00 }
+                    ]
+                },
+                'TxTag': {
+                    states: ['TX', 'KS', 'OK'],
+                    locations: [
+                        { name: 'SH 130', min: 1.35, max: 12.15 },
+                        { name: 'SH 45 North', min: 1.35, max: 2.13 },
+                        { name: 'SH 45 SE', min: 0.98, max: 1.64 },
+                        { name: 'Loop 1', min: 0.98, max: 1.64 },
+                        { name: 'US 290', min: 0.98, max: 1.64 },
+                        { name: 'US 183A', min: 1.35, max: 2.13 },
+                        { name: '183 Toll', min: 1.35, max: 2.13 },
+                        { name: 'SH 99', min: 0.65, max: 7.25 },
+                        { name: 'North Tarrant Express', min: 0.75, max: 9.50 },
+                        { name: 'LBJ TEXpress Lanes', min: 0.75, max: 9.50 }
+                    ]
+                },
+                'I-Pass': {
+                    states: ['IL', 'WI', 'IN'],
+                    locations: [
+                        { name: 'Tri-State Tollway (I-94/I-294/I-80)', min: 1.10, max: 3.80 },
+                        { name: 'Jane Addams Memorial Tollway (I-90)', min: 1.10, max: 3.80 },
+                        { name: 'Reagan Memorial Tollway (I-88)', min: 1.10, max: 3.80 },
+                        { name: 'Veterans Memorial Tollway (I-355)', min: 1.10, max: 3.80 },
+                        { name: 'Chicago Skyway', min: 5.60, max: 5.60 }
+                    ]
+                },
+                'PeachPass': {
+                    states: ['GA', 'FL', 'NC'],
+                    locations: [
+                        { name: 'I-85 Express Lanes', min: 0.10, max: 13.95 },
+                        { name: 'I-75 Northwest Express Lanes', min: 0.10, max: 13.95 },
+                        { name: 'I-75 South Metro Express Lanes', min: 0.10, max: 13.95 },
+                        { name: 'I-285 Top End Express Lanes', min: 0.10, max: 13.95 }
+                    ]
+                },
+                'NC Quick Pass': {
+                    states: ['NC', 'SC', 'FL', 'GA'],
+                    locations: [
+                        { name: 'Triangle Expressway', min: 0.49, max: 3.37 },
+                        { name: 'Monroe Expressway', min: 0.49, max: 2.53 },
+                        { name: 'I-77 Express Lanes', min: 0.30, max: 7.00 }
+                    ]
+                },
+                'Other': {
+                    states: ['Other'],
+                    locations: [
+                        { name: 'General Toll Road', min: 1.00, max: 15.00 },
+                        { name: 'Bridge Toll', min: 2.00, max: 18.00 },
+                        { name: 'Tunnel Toll', min: 2.00, max: 18.00 },
+                        { name: 'Express Lane', min: 0.50, max: 12.00 }
+                    ]
+                }
+            };
+            
             // State and city selection handling
             const stateSelect = document.getElementById('stateSelect');
             const citySelect = document.getElementById('citySelect');
             const taxRateInput = document.getElementById('taxRate');
+            
+            // Fixed: Store user's tax rate separately to avoid overriding
+            let userTaxRate = null;
+            
+            // Add change listener to tax rate input to capture user changes
+            taxRateInput.addEventListener('change', function() {
+                // Store the user's manually entered tax rate
+                userTaxRate = parseFloat(this.value);
+            });
             
             stateSelect.addEventListener('change', function() {
                 const selectedState = this.value;
                 citySelect.innerHTML = '<option value="">Select City</option>';
                 
                 if (selectedState && taxRates[selectedState]) {
-                    // Set default tax rate for state
-                    taxRateInput.value = taxRates[selectedState].default;
+                    // Only set default tax rate if user hasn't specified one
+                    if (userTaxRate === null) {
+                        taxRateInput.value = taxRates[selectedState].default;
+                    } else {
+                        taxRateInput.value = userTaxRate;
+                    }
                     
                     // Add cities for the selected state
                     Object.keys(taxRates[selectedState]).forEach(city => {
@@ -824,10 +1815,11 @@ $21.70`;
                 const selectedState = stateSelect.value;
                 const selectedCity = this.value;
                 
-                if (selectedState && selectedCity && taxRates[selectedState][selectedCity]) {
+                // Only set city tax rate if user hasn't specified one
+                if (selectedState && selectedCity && taxRates[selectedState][selectedCity] && userTaxRate === null) {
                     taxRateInput.value = taxRates[selectedState][selectedCity];
-                } else if (selectedState && taxRates[selectedState]) {
-                    taxRateInput.value = taxRates[selectedState].default;
+                } else if (userTaxRate !== null) {
+                    taxRateInput.value = userTaxRate;
                 }
             });
             
@@ -853,8 +1845,9 @@ $21.70`;
                 return false;
             }
             
-            // Buy credits button handlers
-            buyCreditsButton.addEventListener('click', function() {
+            // Buy credits button handlers - made modal
+            buyCreditsButton.addEventListener('click', function(e) {
+                e.preventDefault();
                 buyCreditsModal.classList.remove('hidden');
             });
             
@@ -870,82 +1863,41 @@ $21.70`;
             buyCreditsButtons.forEach(button => {
                 button.addEventListener('click', function() {
                     const creditsToAdd = parseInt(this.dataset.credits);
+                    // In production this would open Stripe checkout
                     addCredits(creditsToAdd);
                     alert(`Added ${creditsToAdd} credits to your account!`);
                 });
             });
             
-            // Check if location tax information is available and prompt if needed
-            function checkLocationTaxInfo(expense) {
-                // Reset tax information fields
-                stateSelect.value = '';
-                citySelect.innerHTML = '<option value="">Select City</option>';
-                taxRateInput.value = '8.25'; // Default
+            // Helper function to get loyalty program information
+            function getLoyaltyInfo() {
+                let loyaltyPrograms = [];
                 
-                // Try to extract location info from the expense
-                let hasTaxInfo = false;
-                
-                if (expense.location) {
-                    const locationParts = expense.location.split(',');
-                    if (locationParts.length >= 2) {
-                        const city = locationParts[0].trim();
-                        const state = locationParts[1].trim();
-                        
-                        // Try to match state name to our database
-                        let stateAbbr = '';
-                        Object.keys(taxRates).forEach(abbr => {
-                            if (state.includes(abbr) || 
-                                (abbr === 'CA' && state.includes('California')) ||
-                                (abbr === 'TX' && state.includes('Texas')) ||
-                                (abbr === 'NY' && state.includes('New York')) ||
-                                (abbr === 'FL' && state.includes('Florida')) ||
-                                (abbr === 'IL' && state.includes('Illinois')) ||
-                                (abbr === 'PA' && state.includes('Pennsylvania')) ||
-                                (abbr === 'OH' && state.includes('Ohio')) ||
-                                (abbr === 'GA' && state.includes('Georgia')) ||
-                                (abbr === 'NC' && state.includes('North Carolina')) ||
-                                (abbr === 'MI' && state.includes('Michigan')) ||
-                                (abbr === 'MO' && state.includes('Missouri')) ||
-                                (abbr === 'KS' && state.includes('Kansas'))) {
-                                stateAbbr = abbr;
-                            }
-                        });
-                        
-                        if (stateAbbr) {
-                            // Set the state
-                            stateSelect.value = stateAbbr;
-                            
-                            // Trigger change event to populate cities
-                            const event = new Event('change');
-                            stateSelect.dispatchEvent(event);
-                            
-                            // Try to match city
-                            if (taxRates[stateAbbr]) {
-                                let cityMatch = false;
-                                Object.keys(taxRates[stateAbbr]).forEach(taxCity => {
-                                    if (taxCity !== 'default' && city.includes(taxCity)) {
-                                        citySelect.value = taxCity;
-                                        
-                                        // Set tax rate based on city
-                                        taxRateInput.value = taxRates[stateAbbr][taxCity];
-                                        cityMatch = true;
-                                    }
-                                });
-                                
-                                if (!cityMatch) {
-                                    // Use state default if city not found
-                                    taxRateInput.value = taxRates[stateAbbr].default;
-                                }
-                                
-                                hasTaxInfo = true;
-                            }
-                        }
-                    }
+                // First loyalty program
+                if (loyaltyProgram1.value && loyaltyNumber1.value) {
+                    const programName = loyaltyProgram1.value === 'Other' ? 
+                        otherLoyaltyName1.value || 'Loyalty Program' : loyaltyProgram1.value;
+                    
+                    loyaltyPrograms.push({
+                        program: programName,
+                        number: loyaltyNumber1.value
+                    });
                 }
                 
-                return hasTaxInfo;
+                // Second loyalty program
+                if (loyaltyProgram2.value && loyaltyNumber2.value) {
+                    const programName = loyaltyProgram2.value === 'Other' ? 
+                        otherLoyaltyName2.value || 'Loyalty Program' : loyaltyProgram2.value;
+                    
+                    loyaltyPrograms.push({
+                        program: programName,
+                        number: loyaltyNumber2.value
+                    });
+                }
+                
+                return loyaltyPrograms;
             }
-
+            
             // Parse expense data from Concur format
             parseButton.addEventListener('click', function() {
                 const data = expenseInput.value.trim();
@@ -965,6 +1917,84 @@ $21.70`;
                 }
             });
             
+            // Mileage log generator
+            generateMileageLogButton.addEventListener('click', function() {
+                const startDate = new Date(mileageStartDate.value);
+                const endDate = new Date(mileageEndDate.value);
+                const totalMiles = parseFloat(totalMileage.value);
+                const trips = parseInt(numTrips.value);
+                
+                if (!mileageStartDate.value || !mileageEndDate.value || !totalMileage.value || !numTrips.value) {
+                    alert('Please fill out all mileage fields.');
+                    return;
+                }
+                
+                if (startDate > endDate) {
+                    alert('Start date must be before end date.');
+                    return;
+                }
+                
+                // Calculate required credits (1 credit per trip)
+                const creditsNeeded = trips;
+                
+                // Check if enough credits
+                if (!useCredits(creditsNeeded)) {
+                    alert(`Not enough credits. You need ${creditsNeeded} credits to generate ${trips} trips.`);
+                    return;
+                }
+                
+                // Generate mileage log
+                const mileageLog = generateMileageLog(startDate, endDate, totalMiles, trips);
+                
+                // Display in receipt modal
+                receiptContent.innerHTML = mileageLog;
+                receiptModal.classList.remove('hidden');
+                
+                // Set up for navigation
+                generatedReceipts = [mileageLog];
+                currentReceiptIndex = 0;
+                showCurrentReceipt();
+            });
+            
+            // Toll receipt generator
+            generateTollReceiptButton.addEventListener('click', function() {
+                const startDate = new Date(tollStartDate.value);
+                const endDate = new Date(tollEndDate.value);
+                const totalAmount = parseFloat(totalTollAmount.value);
+                const tolls = parseInt(numTolls.value);
+                
+                if (!tollStartDate.value || !tollEndDate.value || !totalTollAmount.value || !numTolls.value) {
+                    alert('Please fill out all toll receipt fields.');
+                    return;
+                }
+                
+                if (startDate > endDate) {
+                    alert('Start date must be before end date.');
+                    return;
+                }
+                
+                // Calculate required credits (1 credit per toll)
+                const creditsNeeded = tolls;
+                
+                // Check if enough credits
+                if (!useCredits(creditsNeeded)) {
+                    alert(`Not enough credits. You need ${creditsNeeded} credits to generate ${tolls} toll receipts.`);
+                    return;
+                }
+                
+                // Generate toll receipt
+                const tollReceipt = generateTollReceipt(startDate, endDate, totalAmount, tolls);
+                
+                // Display in receipt modal
+                receiptContent.innerHTML = tollReceipt;
+                receiptModal.classList.remove('hidden');
+                
+                // Set up for navigation
+                generatedReceipts = [tollReceipt];
+                currentReceiptIndex = 0;
+                showCurrentReceipt();
+            });
+            
             // Add expense from manual entry
             addManualExpenseButton.addEventListener('click', function() {
                 // Validate inputs
@@ -981,6 +2011,9 @@ $21.70`;
                 const lastFour = document.getElementById('paymentLastFour').value || '0000';
                 const paymentMethod = lastFour ? `${paymentCardType}•••${lastFour}` : paymentCardType;
                 
+                // Get loyalty info
+                const loyaltyInfo = getLoyaltyInfo();
+                
                 // Create expense object
                 const expense = {
                     type: manualType.value,
@@ -990,7 +2023,7 @@ $21.70`;
                     amount: '$' + parseFloat(manualAmount.value).toFixed(2),
                     cardType: paymentMethod,
                     customerName: customerName,
-                    loyaltyNumber: document.getElementById('loyaltyNumber').value || '',
+                    loyaltyPrograms: loyaltyInfo,
                     // Add the nights property for hotel/car rental expenses
                     ...(manualType.value === 'Accommodation' && {nights: parseInt(hotelNights.value)}),
                     ...(manualType.value === 'Car Rental' && {days: parseInt(hotelNights.value)}),
@@ -1046,15 +2079,6 @@ $21.70`;
                     const selectedIndex = parseInt(checkbox.value);
                     const selectedExpense = expenses[selectedIndex];
                     
-                    // Check tax information
-                    const hasTaxInfo = checkLocationTaxInfo(selectedExpense);
-                    
-                    // If no tax information could be determined, prompt the user
-                    if (!hasTaxInfo && !confirm(`Location tax information couldn't be determined for ${selectedExpense.vendor} in "${selectedExpense.location}". Use default tax rate of 8.25%?`)) {
-                        // User wants to set tax manually - already prompted
-                        alert('Please set the state, city, and tax rate in the left panel before generating the receipt.');
-                    }
-                    
                     // Get customer name (use default if not provided)
                     const customerName = selectedExpense.customerName || document.getElementById('customerName').value || 'Guest';
                     
@@ -1066,15 +2090,16 @@ $21.70`;
                         paymentMethod = lastFour ? `${paymentCardType}•••${lastFour}` : paymentCardType;
                     }
                     
-                    // Loyalty number
-                    const loyaltyNumber = selectedExpense.loyaltyNumber || document.getElementById('loyaltyNumber').value || '';
+                    // Get loyalty info
+                    const loyaltyInfo = selectedExpense.loyaltyPrograms || getLoyaltyInfo();
+                    const loyaltyNumber = loyaltyInfo && loyaltyInfo.length > 0 ? loyaltyInfo[0].number : '';
                     
                     // Get company policy values
                     const policy = {
                         customerName: customerName,
                         paymentMethod: paymentMethod,
                         loyaltyNumber: loyaltyNumber,
-                        taxRate: parseFloat(document.getElementById('taxRate').value) || 8.25,
+                        taxRate: userTaxRate !== null ? userTaxRate : parseFloat(document.getElementById('taxRate').value) || 8.25,
                         receiptQuality: proQuality.checked ? 'pro' : 'basic'
                     };
                     
@@ -1087,13 +2112,136 @@ $21.70`;
                 currentReceiptIndex = 0;
                 showCurrentReceipt();
                 receiptModal.classList.remove('hidden');
+                
+                // Populate edit fields for the first receipt
+                populateEditFields(expenses[parseInt(selectedCheckboxes[0].value)]);
             });
             
-            // Navigate between receipts
+            // Receipt edit functionality
+            applyEditsBtn.addEventListener('click', function() {
+                // Get the current receipt data
+                const currentReceipt = expenses[parseInt(document.querySelectorAll('input[name="expenseCheck"]:checked')[currentReceiptIndex].value)];
+                if (!currentReceipt) return;
+                
+                // Update receipt data with edited values
+                if (editVendor.value) currentReceipt.vendor = editVendor.value;
+                if (editLocation.value) currentReceipt.location = editLocation.value;
+                
+                // Update date if provided
+                if (editDate.value) {
+                    currentReceipt.date = editDate.value;
+                }
+                
+                // Update amount if provided
+                if (editAmount.value && !isNaN(parseFloat(editAmount.value))) {
+                    currentReceipt.amount = '$' + parseFloat(editAmount.value).toFixed(2);
+                }
+                
+                // Update tax rate if provided
+                if (editTaxRate.value && !isNaN(parseFloat(editTaxRate.value))) {
+                    userTaxRate = parseFloat(editTaxRate.value);
+                    taxRateInput.value = userTaxRate;
+                }
+                
+                // Update payment method
+                if (editPaymentMethod.value) {
+                    const lastFour = editLastFour.value || '0000';
+                    currentReceipt.cardType = lastFour ? `${editPaymentMethod.value}•••${lastFour}` : editPaymentMethod.value;
+                }
+                
+                // Regenerate the receipt HTML with updated data
+                const policy = {
+                    customerName: currentReceipt.customerName || document.getElementById('customerName').value || 'Guest',
+                    paymentMethod: currentReceipt.cardType,
+                    loyaltyNumber: currentReceipt.loyaltyPrograms && currentReceipt.loyaltyPrograms.length > 0 ? 
+                        currentReceipt.loyaltyPrograms[0].number : '',
+                    taxRate: userTaxRate !== null ? userTaxRate : parseFloat(document.getElementById('taxRate').value) || 8.25,
+                    receiptQuality: proQuality.checked ? 'pro' : 'basic'
+                };
+                
+                const receiptHtml = generateReceipt(currentReceipt, policy);
+                generatedReceipts[currentReceiptIndex] = receiptHtml;
+                receiptContent.innerHTML = receiptHtml;
+                
+                // Show success message
+                const successMessage = document.createElement('div');
+                successMessage.className = 'bg-green-600 text-white p-2 rounded mt-2 text-center';
+                successMessage.textContent = 'Receipt updated successfully';
+                
+                // Insert after the apply button
+                applyEditsBtn.parentNode.appendChild(successMessage);
+                
+                // Remove the message after 2 seconds
+                setTimeout(() => {
+                    successMessage.remove();
+                }, 2000);
+                
+                // Update the expense list
+                displayParsedExpenses(expenses);
+            });
+            
+            // Populate edit fields when viewing a receipt
+            function populateEditFields(expense) {
+                editVendor.value = expense.vendor || '';
+                editLocation.value = expense.location || '';
+                
+                // Format date for date input (YYYY-MM-DD)
+                if (expense.date) {
+                    editDate.value = expense.date;
+                } else {
+                    editDate.value = '';
+                }
+                
+                // Set time value if available
+                editTime.value = expense.time || '';
+                
+                // Set amount - strip $ sign
+                if (expense.amount) {
+                    editAmount.value = expense.amount.replace('$', '').replace(',', '');
+                } else {
+                    editAmount.value = '';
+                }
+                
+                // Set tax rate
+                editTaxRate.value = userTaxRate !== null ? userTaxRate : document.getElementById('taxRate').value;
+                
+                // Set payment method
+                if (expense.cardType) {
+                    const paymentMethod = expense.cardType.split('•••')[0];
+                    // Find the option that matches the payment method
+                    const options = Array.from(editPaymentMethod.options);
+                    const option = options.find(opt => paymentMethod.includes(opt.value));
+                    if (option) {
+                        editPaymentMethod.value = option.value;
+                    } else {
+                        editPaymentMethod.value = 'VISA'; // Default
+                    }
+                    
+                    // Set last four digits
+                    const lastFourMatch = expense.cardType.match(/•••(\d{4})/);
+                    if (lastFourMatch) {
+                        editLastFour.value = lastFourMatch[1];
+                    } else {
+                        editLastFour.value = '';
+                    }
+                } else {
+                    editPaymentMethod.value = document.getElementById('paymentCardType').value;
+                    editLastFour.value = document.getElementById('paymentLastFour').value;
+                }
+            }
+            
+            // Add navigation event handlers to populate edit fields
             prevReceiptBtn.addEventListener('click', function() {
                 if (currentReceiptIndex > 0) {
                     currentReceiptIndex--;
                     showCurrentReceipt();
+                    
+                    // Get the index of the displayed expense
+                    const selectedCheckboxes = document.querySelectorAll('input[name="expenseCheck"]:checked');
+                    if (selectedCheckboxes.length > currentReceiptIndex) {
+                        const expenseIndex = parseInt(selectedCheckboxes[currentReceiptIndex].value);
+                        populateEditFields(expenses[expenseIndex]);
+                    }
                 }
             });
             
@@ -1101,9 +2249,17 @@ $21.70`;
                 if (currentReceiptIndex < generatedReceipts.length - 1) {
                     currentReceiptIndex++;
                     showCurrentReceipt();
+                    
+                    // Get the index of the displayed expense
+                    const selectedCheckboxes = document.querySelectorAll('input[name="expenseCheck"]:checked');
+                    if (selectedCheckboxes.length > currentReceiptIndex) {
+                        const expenseIndex = parseInt(selectedCheckboxes[currentReceiptIndex].value);
+                        populateEditFields(expenses[expenseIndex]);
+                    }
                 }
             });
             
+            // Navigate between receipts
             function showCurrentReceipt() {
                 receiptContent.innerHTML = generatedReceipts[currentReceiptIndex];
                 receiptCounter.textContent = `Receipt ${currentReceiptIndex + 1} of ${generatedReceipts.length}`;
@@ -1114,13 +2270,6 @@ $21.70`;
                 
                 nextReceiptBtn.disabled = currentReceiptIndex === generatedReceipts.length - 1;
                 nextReceiptBtn.classList.toggle('opacity-50', currentReceiptIndex === generatedReceipts.length - 1);
-                
-                // Add watermark for basic quality
-                if (generatedReceipts[currentReceiptIndex].includes('data-quality="basic"')) {
-                    receiptContent.classList.add('basic');
-                } else {
-                    receiptContent.classList.remove('basic');
-                }
             }
             
             // Batch process all receipts
@@ -1150,14 +2299,6 @@ $21.70`;
                 let processedCount = 0;
                 let totalSuccessCount = 0;
                 
-                // Get customer name
-                const customerName = document.getElementById('customerName').value || 'Guest';
-                
-                // Get payment method info
-                const paymentCardType = document.getElementById('paymentCardType').value;
-                const lastFour = document.getElementById('paymentLastFour').value || '0000';
-                const paymentMethod = lastFour ? `${paymentCardType}•••${lastFour}` : paymentCardType;
-                
                 // Start batch processing
                 for (let i = 0; i < expenses.length; i++) {
                     const expense = expenses[i];
@@ -1167,85 +2308,35 @@ $21.70`;
                     batchProgress.style.width = `${progress}%`;
                     batchStatusText.textContent = `Processing ${i + 1} of ${expenses.length} expenses...`;
                     
-                    // Check tax information
-                    const hasTaxInfo = checkLocationTaxInfo(expense);
+                    // Get customer name (use default if not provided)
+                    const customerName = expense.customerName || document.getElementById('customerName').value || 'Guest';
                     
-                    // If no tax information, skip this expense
-                    if (!hasTaxInfo) {
-                        skippedExpenses.push({
-                            vendor: expense.vendor,
-                            location: expense.location,
-                            amount: expense.amount,
-                            date: expense.date,
-                            reason: "Missing tax information"
-                        });
-                        
-                        // Add small delay to allow UI to update
-                        await new Promise(resolve => setTimeout(resolve, 50));
-                        continue;
+                    // Get payment method info if not already set
+                    let paymentMethod = expense.cardType;
+                    if (!paymentMethod) {
+                        const paymentCardType = document.getElementById('paymentCardType').value;
+                        const lastFour = document.getElementById('paymentLastFour').value || '0000';
+                        paymentMethod = lastFour ? `${paymentCardType}•••${lastFour}` : paymentCardType;
                     }
+                    
+                    // Get loyalty info
+                    const loyaltyInfo = expense.loyaltyPrograms || getLoyaltyInfo();
+                    const loyaltyNumber = loyaltyInfo && loyaltyInfo.length > 0 ? loyaltyInfo[0].number : '';
                     
                     // Get company policy values
                     const policy = {
-                        customerName: expense.customerName || customerName,
-                        paymentMethod: expense.cardType || paymentMethod,
-                        loyaltyNumber: expense.loyaltyNumber || document.getElementById('loyaltyNumber').value || '',
-                        taxRate: parseFloat(document.getElementById('taxRate').value) || 8.25,
+                        customerName: customerName,
+                        paymentMethod: paymentMethod,
+                        loyaltyNumber: loyaltyNumber,
+                        taxRate: userTaxRate !== null ? userTaxRate : parseFloat(document.getElementById('taxRate').value) || 8.25,
                         receiptQuality: proQuality.checked ? 'pro' : 'basic'
                     };
                     
                     // Generate receipt
-                    const receiptHTML = generateReceipt(expense, policy);
-                    allReceipts.push(receiptHTML);
-                    
                     try {
-                        // Create a temporary container for the receipt
-                        const tempContainer = document.createElement('div');
-                        tempContainer.innerHTML = receiptHTML;
-                        tempContainer.classList.add('receipt-container', 'download-receipt');
-                        tempContainer.style.backgroundColor = '#ffffff';
-                        tempContainer.style.color = '#000000';
-                        tempContainer.style.padding = '20px';
-                        document.body.appendChild(tempContainer);
-                        
-                        // Remove watermark for download
-                        tempContainer.classList.remove('receipt-preview', 'basic');
-                        
-                        // Apply dark text for download
-                        const allElements = tempContainer.querySelectorAll('*');
-                        allElements.forEach(el => {
-                            el.style.color = '#000000';
-                        });
-                        
-                        // Generate PDF
-                        const canvas = await html2canvas(tempContainer, {
-                            scale: 2,
-                            backgroundColor: '#ffffff',
-                            useCORS: true
-                        });
-                        
-                        // Create and download pdf
-                        const { jsPDF } = window.jspdf;
-                        const pdf = new jsPDF('p', 'mm', 'a4');
-                        
-                        const imgData = canvas.toDataURL('image/png');
-                        const imgWidth = 210 - 20;
-                        const pageHeight = 297;
-                        const imgHeight = (canvas.height * imgWidth) / canvas.width;
-                        
-                        pdf.addImage(imgData, 'PNG', 10, 10, imgWidth, imgHeight);
-                        
-                        // Save the PDF
-                        const sanitizedVendor = expense.vendor.replace(/[^a-z0-9]/gi, '_').substring(0, 10);
-                        const dateStr = expense.date.replace(/\//g, '-');
-                        pdf.save(`receipt_${sanitizedVendor}_${dateStr}_${expense.amount.replace('$', '')}.pdf`);
-                        
-                        // Clean up
-                        document.body.removeChild(tempContainer);
+                        const receiptHTML = generateReceipt(expense, policy);
+                        allReceipts.push(receiptHTML);
                         totalSuccessCount++;
-                        
-                        // Small delay to avoid overwhelming the browser
-                        await new Promise(resolve => setTimeout(resolve, 500));
                     } catch (error) {
                         console.error('Error generating receipt:', error);
                         skippedExpenses.push({
@@ -1253,11 +2344,14 @@ $21.70`;
                             location: expense.location,
                             amount: expense.amount,
                             date: expense.date,
-                            reason: 'PDF generation failed'
+                            reason: 'Receipt generation failed'
                         });
                     }
                     
                     processedCount++;
+                    
+                    // Add small delay to allow UI to update
+                    await new Promise(resolve => setTimeout(resolve, 50));
                 }
                 
                 // Update final status
@@ -1273,9 +2367,6 @@ $21.70`;
                         skippedList.appendChild(li);
                     });
                 }
-                
-                // Update generated receipts for viewing
-                generatedReceipts = allReceipts;
                 
                 // Alert completion
                 alert(`Receipt generation complete!\n${totalSuccessCount} receipts created.\n${skippedExpenses.length} receipts skipped due to issues.`);
@@ -1303,10 +2394,10 @@ $21.70`;
 
             // Download as PDF
             downloadPdf.addEventListener('click', async function() {
-                const { jsPDF } = window.jspdf;
-                const pdf = new jsPDF('p', 'mm', 'a4');
-                
                 try {
+                    const { jsPDF } = window.jspdf;
+                    const pdf = new jsPDF('p', 'mm', 'a4');
+                    
                     // Create a clone of the receipt container without watermark
                     const tempContainer = document.createElement('div');
                     tempContainer.innerHTML = receiptContent.innerHTML;
@@ -1449,6 +2540,9 @@ $21.70`;
                         const lastFour = document.getElementById('paymentLastFour').value || '0000';
                         const paymentMethod = lastFour ? `${paymentCardType}•••${lastFour}` : paymentCardType;
                         
+                        // Get loyalty info
+                        const loyaltyInfo = getLoyaltyInfo();
+                        
                         // Only add if we have an amount
                         if (amount) {
                             expenses.push({
@@ -1459,7 +2553,7 @@ $21.70`;
                                 amount,
                                 cardType: paymentMethod,
                                 customerName: customerName,
-                                loyaltyNumber: document.getElementById('loyaltyNumber').value || '',
+                                loyaltyPrograms: loyaltyInfo,
                                 // For hotels, default to 1 night
                                 ...(type.includes('Accommodation') && {nights: 1}),
                                 // For car rentals, default to 1 day
@@ -1547,18 +2641,6 @@ $21.70`;
                             return;
                         }
                         
-                        // Check tax information
-                        const hasTaxInfo = checkLocationTaxInfo(expense);
-                        
-                        // If no tax information could be determined, prompt the user
-                        if (!hasTaxInfo) {
-                            if (!confirm(`Location tax information couldn't be determined for ${expense.vendor} in "${expense.location}". Use default tax rate of 8.25%?`)) {
-                                // User wants to set tax manually
-                                alert('Please set the state, city, and tax rate in the left panel before generating the receipt.');
-                                return;
-                            }
-                        }
-                        
                         // Get customer name
                         const customerName = expense.customerName || document.getElementById('customerName').value || 'Guest';
                         
@@ -1570,12 +2652,16 @@ $21.70`;
                             paymentMethod = lastFour ? `${paymentCardType}•••${lastFour}` : paymentCardType;
                         }
                         
+                        // Get loyalty info
+                        const loyaltyInfo = expense.loyaltyPrograms || getLoyaltyInfo();
+                        const loyaltyNumber = loyaltyInfo && loyaltyInfo.length > 0 ? loyaltyInfo[0].number : '';
+                        
                         // Get company policy values
                         const policy = {
                             customerName: customerName,
                             paymentMethod: paymentMethod,
-                            loyaltyNumber: expense.loyaltyNumber || document.getElementById('loyaltyNumber').value || '',
-                            taxRate: parseFloat(document.getElementById('taxRate').value) || 8.25,
+                            loyaltyNumber: loyaltyNumber,
+                            taxRate: userTaxRate !== null ? userTaxRate : parseFloat(document.getElementById('taxRate').value) || 8.25,
                             receiptQuality: proQuality.checked ? 'pro' : 'basic'
                         };
                         
@@ -1587,64 +2673,541 @@ $21.70`;
                         currentReceiptIndex = 0;
                         showCurrentReceipt();
                         receiptModal.classList.remove('hidden');
+                        
+                        // Populate edit fields
+                        populateEditFields(expense);
                     });
                 });
             }
 
+            // Generate Mileage Log
+            function generateMileageLog(startDate, endDate, totalMiles, trips) {
+                // Get vehicle info
+                const vehicleMake = document.getElementById('vehicleMake').value || 'Toyota';
+                const vehicleModel = document.getElementById('vehicleModel').value || 'Camry';
+                const homeBase = document.getElementById('homeBase').value || 'Home Office';
+                const endOdometer = document.getElementById('endOdometer').value || '45000';
+                
+                // Calculate dates between start and end
+                const dateArray = [];
+                let currentDate = new Date(startDate);
+                while (currentDate <= endDate) {
+                    dateArray.push(new Date(currentDate));
+                    currentDate.setDate(currentDate.getDate() + 1);
+                }
+                
+                // Randomly select dates for trips (or distribute evenly if more trips than days)
+                let tripDates = [];
+                if (trips <= dateArray.length) {
+                    // Randomly select dates
+                    const shuffled = [...dateArray].sort(() => 0.5 - Math.random());
+                    tripDates = shuffled.slice(0, trips);
+                } else {
+                    // Distribute evenly with some dates having multiple trips
+                    for (let i = 0; i < trips; i++) {
+                        tripDates.push(dateArray[i % dateArray.length]);
+                    }
+                }
+                
+                // Sort the dates chronologically
+                tripDates.sort((a, b) => a - b);
+                
+                // Calculate miles per trip (approximately)
+                const milesPerTrip = totalMiles / trips;
+                
+                // Calculate starting odometer
+                const startOdometer = parseInt(endOdometer) - totalMiles;
+                
+                // Generate trip destinations
+                const destinations = [
+                    "Client Meeting", 
+                    "Sales Conference", 
+                    "Customer Site Visit", 
+                    "Regional Office",
+                    "Business Lunch",
+                    "Training Session",
+                    "Project Kickoff",
+                    "Vendor Meeting"
+                ];
+                
+                // Generate mileage log HTML
+                let mileageLogHtml = `
+                    <div class="mileage-receipt">
+                        <h2 style="text-align: center; margin-bottom: 15px; font-size: 20px; font-weight: bold; color: #000;">Mileage Log</h2>
+                        
+                        <div style="margin-bottom: 15px;">
+                            <table style="width: 100%; font-size: 14px; color: #000;">
+                                <tr>
+                                    <td style="padding: 4px; width: 150px; color: #000;"><strong>Vehicle:</strong></td>
+                                    <td style="padding: 4px; color: #000;">${vehicleMake} ${vehicleModel}</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 4px; color: #000;"><strong>Period:</strong></td>
+                                    <td style="padding: 4px; color: #000;">${formatDate(startDate)} to ${formatDate(endDate)}</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 4px; color: #000;"><strong>Starting Odometer:</strong></td>
+                                    <td style="padding: 4px; color: #000;">${startOdometer} miles</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 4px; color: #000;"><strong>Ending Odometer:</strong></td>
+                                    <td style="padding: 4px; color: #000;">${endOdometer} miles</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 4px; color: #000;"><strong>Total Miles:</strong></td>
+                                    <td style="padding: 4px; color: #000;">${totalMiles} miles</td>
+                                </tr>
+                            </table>
+                        </div>
+                        
+                        <table style="width: 100%; border-collapse: collapse; font-size: 14px; color: #000;">
+                            <thead>
+                                <tr style="background-color: #f5f5f5;">
+                                    <th style="padding: 8px; text-align: left; border: 1px solid #ddd; color: #000;">Date</th>
+                                    <th style="padding: 8px; text-align: left; border: 1px solid #ddd; color: #000;">From</th>
+                                    <th style="padding: 8px; text-align: left; border: 1px solid #ddd; color: #000;">To</th>
+                                    <th style="padding: 8px; text-align: left; border: 1px solid #ddd; color: #000;">Purpose</th>
+                                    <th style="padding: 8px; text-align: left; border: 1px solid #ddd; color: #000;">Odometer Start</th>
+                                    <th style="padding: 8px; text-align: left; border: 1px solid #ddd; color: #000;">Odometer End</th>
+                                    <th style="padding: 8px; text-align: left; border: 1px solid #ddd; color: #000;">Miles</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                `;
+                
+                let currentOdometer = startOdometer;
+                
+                // Generate rows for each trip
+                tripDates.forEach((date, index) => {
+                    const destination = destinations[Math.floor(Math.random() * destinations.length)];
+                    const tripMiles = Math.round(milesPerTrip + (Math.random() * milesPerTrip * 0.2 - milesPerTrip * 0.1)); // Random variation ±10%
+                    const newOdometer = currentOdometer + tripMiles;
+                    
+                    mileageLogHtml += `
+                        <tr>
+                            <td style="padding: 8px; text-align: left; border: 1px solid #ddd; color: #000;">${formatDate(date)}</td>
+                            <td style="padding: 8px; text-align: left; border: 1px solid #ddd; color: #000;">${homeBase}</td>
+                            <td style="padding: 8px; text-align: left; border: 1px solid #ddd; color: #000;">${destination}</td>
+                            <td style="padding: 8px; text-align: left; border: 1px solid #ddd; color: #000;">Business Travel</td>
+                            <td style="padding: 8px; text-align: left; border: 1px solid #ddd; color: #000;">${currentOdometer}</td>
+                            <td style="padding: 8px; text-align: left; border: 1px solid #ddd; color: #000;">${newOdometer}</td>
+                            <td style="padding: 8px; text-align: left; border: 1px solid #ddd; color: #000;">${tripMiles}</td>
+                        </tr>
+                    `;
+                    
+                    currentOdometer = newOdometer;
+                });
+                
+                mileageLogHtml += `
+                            </tbody>
+                        </table>
+                        
+                        <div style="margin-top: 20px; text-align: center; font-size: 14px;">
+                            <p style="margin: 5px 0; color: #000;">This mileage log is provided for record-keeping purposes only.</p>
+                            <p style="margin: 5px 0; color: #000;">Standard mileage rate for business use: $0.655 per mile (2023)</p>
+                        </div>
+                    </div>
+                `;
+                
+                return mileageLogHtml;
+            }
+
+            // Generate Toll Receipt
+            function generateTollReceipt(startDate, endDate, totalAmount, tolls) {
+                // Get toll pass system
+                const tollPassSystem = document.getElementById('tollPassSystem').value;
+                const vehicleMake = document.getElementById('vehicleMake').value || 'Toyota';
+                const vehicleModel = document.getElementById('vehicleModel').value || 'Camry';
+                
+                // Calculate dates between start and end
+                const dateArray = [];
+                let currentDate = new Date(startDate);
+                while (currentDate <= endDate) {
+                    dateArray.push(new Date(currentDate));
+                    currentDate.setDate(currentDate.getDate() + 1);
+                }
+                
+                // Randomly select dates for tolls (or distribute evenly if more tolls than days)
+                let tollDates = [];
+                if (tolls <= dateArray.length) {
+                    // Randomly select dates
+                    const shuffled = [...dateArray].sort(() => 0.5 - Math.random());
+                    tollDates = shuffled.slice(0, tolls);
+                } else {
+                    // Distribute evenly with some dates having multiple tolls
+                    for (let i = 0; i < tolls; i++) {
+                        tollDates.push(dateArray[i % dateArray.length]);
+                    }
+                }
+                
+                // Sort the dates chronologically
+                tollDates.sort((a, b) => a - b);
+                
+                // Get toll locations based on selected system
+                const tollSystem = tollData[tollPassSystem] || tollData['Other'];
+                const locations = tollSystem.locations;
+                
+                // Calculate amount per toll (approximately)
+                const amountPerToll = totalAmount / tolls;
+                
+                // Generate random account number
+                const accountNumber = Math.floor(100000000 + Math.random() * 900000000);
+                
+                // Generate toll receipt HTML
+                let tollReceiptHtml = `
+                    <div class="toll-receipt">
+                        <div class="header">
+                            <h2 style="margin: 0; font-size: 22px; font-weight: bold; color: #000;">${tollPassSystem} Statement</h2>
+                            <p style="margin: 5px 0; color: #666; font-size: 14px;">Toll Charges Summary</p>
+                        </div>
+                        
+                        <div style="margin-bottom: 20px;">
+                            <table style="width: 100%; font-size: 14px; color: #000;">
+                                <tr>
+                                    <td style="padding: 4px; width: 200px; color: #000;"><strong>Account Number:</strong></td>
+                                    <td style="padding: 4px; color: #000;">${accountNumber}</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 4px; color: #000;"><strong>Statement Period:</strong></td>
+                                    <td style="padding: 4px; color: #000;">${formatDate(startDate)} to ${formatDate(endDate)}</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 4px; color: #000;"><strong>Vehicle:</strong></td>
+                                    <td style="padding: 4px; color: #000;">${vehicleMake} ${vehicleModel}</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 4px; color: #000;"><strong>Total Charges:</strong></td>
+                                    <td style="padding: 4px; font-weight: bold; color: #000;">$${totalAmount.toFixed(2)}</td>
+                                </tr>
+                            </table>
+                        </div>
+                        
+                        <h3 style="margin: 15px 0 10px 0; font-size: 16px; font-weight: bold; color: #000;">Transaction Details</h3>
+                        
+                        <table style="width: 100%; border-collapse: collapse; font-size: 14px; color: #000;">
+                            <thead>
+                                <tr style="background-color: #f5f5f5;">
+                                    <th style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd; color: #000;">Date</th>
+                                    <th style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd; color: #000;">Time</th>
+                                    <th style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd; color: #000;">Location</th>
+                                    <th style="padding: 8px; text-align: right; border-bottom: 1px solid #ddd; color: #000;">Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                `;
+                
+                // Generate rows for each toll
+                let totalShown = 0;
+                
+                tollDates.forEach((date, index) => {
+                    // Generate random time
+                    const hours = Math.floor(Math.random() * 24);
+                    const minutes = Math.floor(Math.random() * 60);
+                    const time = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}`;
+                    
+                    // Select random location
+                    const location = locations[Math.floor(Math.random() * locations.length)];
+                    
+                    // Calculate toll amount with some variation
+                    const minAmount = location.min;
+                    const maxAmount = location.max;
+                    const tollAmount = parseFloat((minAmount + Math.random() * (maxAmount - minAmount)).toFixed(2));
+                    
+                    // Adjust final toll to make the total exactly match
+                    let adjustedAmount = tollAmount;
+                    if (index === tolls - 1) {
+                        adjustedAmount = parseFloat((totalAmount - totalShown).toFixed(2));
+                    } else {
+                        totalShown += tollAmount;
+                    }
+                    
+                    tollReceiptHtml += `
+                        <tr>
+                            <td style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd; color: #000;">${formatDate(date)}</td>
+                            <td style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd; color: #000;">${time}</td>
+                            <td style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd; color: #000;">${location.name}</td>
+                            <td style="padding: 8px; text-align: right; border-bottom: 1px solid #ddd; color: #000;">$${adjustedAmount.toFixed(2)}</td>
+                        </tr>
+                    `;
+                });
+                
+                tollReceiptHtml += `
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="3" style="padding: 8px; text-align: right; font-weight: bold; border-top: 2px solid #ddd; color: #000;">Total:</td>
+                                    <td style="padding: 8px; text-align: right; font-weight: bold; border-top: 2px solid #ddd; color: #000;">$${totalAmount.toFixed(2)}</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                        
+                        <div style="margin-top: 20px; text-align: center; font-size: 14px; color: #666;">
+                            <p style="margin: 5px 0; color: #666;">This statement is provided for record-keeping purposes only.</p>
+                            <p style="margin: 5px 0; color: #666;">For questions about your account, please contact customer service.</p>
+                        </div>
+                    </div>
+                `;
+                
+                return tollReceiptHtml;
+            }
+
             // Generate a receipt for a given expense
             function generateReceipt(expense, policy) {
+                // Parse amount
                 const amount = parseFloat(expense.amount.replace('$', '').replace(',', ''));
-                const date = new Date(expense.date);
-                const formattedDate = formatDate(date);
-                const formattedTime = formatTime(date);
                 
-                // Determine if receipt is basic or pro quality
+                // Parse date (if it's a string)
+                let date;
+                if (typeof expense.date === 'string') {
+                    // Handle different date formats (MM/DD/YYYY or YYYY-MM-DD)
+                    if (expense.date.includes('/')) {
+                        const parts = expense.date.split('/');
+                        date = new Date(parseInt(parts[2]), parseInt(parts[0]) - 1, parseInt(parts[1]));
+                    } else {
+                        date = new Date(expense.date);
+                    }
+                } else {
+                    date = expense.date || new Date();
+                }
+                
+                // Determine if receipt is basic or premium quality
                 const isProQuality = policy.receiptQuality === 'pro';
                 
                 // Determine receipt type based on vendor and expense type
                 // This helps us select the appropriate template
                 let receiptType = 'generic';
                 
-                if (expense.vendor.includes('UBER') || expense.vendor.includes('LYFT') || 
+                if (expense.vendor.toUpperCase().includes('UBER') || expense.vendor.toUpperCase().includes('LYFT') || 
                     expense.type.includes('Taxi / Car Service')) {
                     receiptType = 'rideshare';
-                } else if (expense.vendor.includes('HILTON') || 
-                          expense.type.includes('Accommodation')) {
-                    receiptType = 'hotel';
-                    
-                    // Specific hotel brands
-                    if (expense.vendor.includes('MARRIOTT') || expense.vendor.includes('ALOFT')) {
-                        receiptType = 'marriott';
-                    } else if (expense.vendor.includes('HILTON')) {
-                        receiptType = 'hilton';
-                    }
-                } else if (expense.type.includes('Car Rental') || expense.vendor.includes('AVIS') || 
-                          expense.vendor.includes('HERTZ') || expense.vendor.includes('ENTERPRISE')) {
+                } else if (expense.vendor.toUpperCase().includes('HILTON') || 
+                          (expense.type.includes('Accommodation') && !expense.vendor.toUpperCase().includes('MARRIOTT'))) {
+                    receiptType = 'hilton';
+                } else if (expense.vendor.toUpperCase().includes('MARRIOTT') || expense.vendor.toUpperCase().includes('ALOFT')) {
+                    receiptType = 'marriott';
+                } else if (expense.type.includes('Car Rental') || expense.vendor.toUpperCase().includes('AVIS') || 
+                          expense.vendor.toUpperCase().includes('HERTZ') || expense.vendor.toUpperCase().includes('ENTERPRISE')) {
                     receiptType = 'carrental';
+                } else if (expense.type.includes('Individual-')) {
+                    receiptType = 'restaurant';
                 }
                 
                 // Select the receipt template based on type and quality
                 if (receiptType === 'rideshare') {
                     return generateRideshareReceipt(expense, policy, isProQuality);
-                } else if (receiptType === 'hotel') {
-                    return generateHotelReceipt(expense, policy, isProQuality);
-                } else if (receiptType === 'marriott') {
-                    return generateMarriottReceipt(expense, policy, isProQuality);
                 } else if (receiptType === 'hilton') {
                     return generateHiltonReceipt(expense, policy, isProQuality);
+                } else if (receiptType === 'marriott') {
+                    return generateMarriottReceipt(expense, policy, isProQuality);
                 } else if (receiptType === 'carrental') {
                     return generateCarRentalReceipt(expense, policy, isProQuality);
+                } else if (receiptType === 'restaurant') {
+                    return generateRestaurantReceipt(expense, policy, isProQuality);
                 } else {
                     return generateGenericReceipt(expense, policy, isProQuality);
                 }
             }
             
+            // Restaurant-style receipt (Jack Stack Barbecue style)
+            function generateRestaurantReceipt(expense, policy, isProQuality) {
+                const amount = parseFloat(expense.amount.replace('$', '').replace(',', ''));
+                let date;
+                if (typeof expense.date === 'string') {
+                    if (expense.date.includes('/')) {
+                        const parts = expense.date.split('/');
+                        date = new Date(parseInt(parts[2]), parseInt(parts[0]) - 1, parseInt(parts[1]));
+                    } else {
+                        date = new Date(expense.date);
+                    }
+                } else {
+                    date = expense.date || new Date();
+                }
+                
+                // Format date properly
+                const formattedDate = formatDate(date);
+                
+                // Calculate receipt components based on tax rate
+                const taxRate = policy.taxRate;
+                const taxAmount = parseFloat((amount * taxRate / 100 / (1 + taxRate / 100)).toFixed(2));
+                const subtotal = parseFloat((amount - taxAmount).toFixed(2));
+                
+                // Generate random server name
+                const serverNames = ["Amy", "John", "Michael", "Sarah", "David", "Lisa", "Robert", "Jessica"];
+                const serverName = serverNames[Math.floor(Math.random() * serverNames.length)];
+                
+                // Generate random server ID
+                const serverID = `${Math.floor(100 + Math.random() * 900)}/${Math.floor(1 + Math.random() * 9)}`;
+                
+                // Generate random receipt number
+                const receiptNumber = Math.floor(100000 + Math.random() * 900000);
+                
+                // Generate random table number
+                const tableNumber = Math.floor(10 + Math.random() * 90);
+                
+                // Generate random check number
+                const checkNumber = Math.floor(10000 + Math.random() * 90000);
+                
+                // Generate random auth code
+                const authCode = Math.floor(100000 + Math.random() * 900000);
+                
+                // Check if it's a food/meal receipt
+                const mealType = expense.type.includes('Dinner') ? 'Dinner' : 
+                               expense.type.includes('Lunch') ? 'Lunch' : 'Breakfast';
+                
+                // Generate menu items based on meal type
+                let menuItems = [];
+                
+                // More detailed for premium receipts
+                if (isProQuality) {
+                    const numItems = Math.floor(Math.random() * 3) + 2; // 2-4 items
+                    let remainingSubtotal = subtotal;
+                    
+                    for (let i = 0; i < numItems; i++) {
+                        let itemPrice;
+                        
+                        if (i === numItems - 1) {
+                            // Last item gets remainder
+                            itemPrice = parseFloat(remainingSubtotal.toFixed(2));
+                        } else {
+                            // Random portion of remaining subtotal
+                            const portion = 0.3 + Math.random() * 0.4; // 30-70% of remaining
+                            itemPrice = parseFloat((remainingSubtotal * portion).toFixed(2));
+                            remainingSubtotal -= itemPrice;
+                        }
+                        
+                        menuItems.push({
+                            name: generateRandomFoodItem(mealType, i !== 0), // First item is main dish
+                            price: itemPrice,
+                            quantity: 1
+                        });
+                    }
+                } else {
+                    // Simpler for basic receipts
+                    const mainItemPrice = parseFloat((subtotal * 0.7).toFixed(2));
+                    const sideItemPrice = parseFloat((subtotal - mainItemPrice).toFixed(2));
+                    
+                    menuItems.push({
+                        name: generateRandomFoodItem(mealType, false),
+                        price: mainItemPrice,
+                        quantity: 1
+                    });
+                    
+                    menuItems.push({
+                        name: generateRandomFoodItem(mealType, true),
+                        price: sideItemPrice,
+                        quantity: 1
+                    });
+                }
+                
+                // Generate HTML for restaurant receipt (Jack Stack style)
+                let receiptHTML = `
+                    <div data-quality="${policy.receiptQuality}" class="restaurant-receipt receipt-text" style="font-family: 'Courier New', monospace; max-width: 350px; margin: 0 auto; text-align: center; color: #000;">
+                        <div class="header">
+                            <h2 style="margin: 0; font-size: 16px; font-weight: bold; color: #000;">${expense.vendor}</h2>
+                            <p style="margin: 2px 0; font-size: 12px; color: #000;">${expense.location}</p>
+                            <p style="margin: 2px 0; font-size: 12px; color: #000;">${expense.location.split(',')[0]} ${isProQuality ? ', MO 64108' : ''}</p>
+                            ${isProQuality ? `<p style="margin: 2px 0; font-size: 12px; color: #000;">(123) 456-7890</p>` : ''}
+                        </div>
+                        
+                        <div style="text-align: left; margin-top: 10px; font-size: 12px; color: #000;">
+                            <p style="margin: 0; color: #000;">Server: ${serverName}</p>
+                            <p style="margin: 0; color: #000;">Table: ${tableNumber}</p>
+                            <p style="margin: 0; color: #000;">Check: ${checkNumber}</p>
+                            <p style="margin: 0; color: #000;">Date: ${formattedDate}</p>
+                        </div>
+                        
+                        <div class="divider" style="border-top: 1px dashed #aaa; margin: 8px 0;"></div>
+                        
+                        <div style="text-align: left; color: #000;">
+                `;
+                
+                // Add menu items
+                menuItems.forEach(item => {
+                    receiptHTML += `
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 5px; font-size: 12px; color: #000;">
+                            <span style="flex: 0 0 30px; color: #000;">${item.quantity}</span>
+                            <span style="flex: 1; color: #000;">${item.name}</span>
+                            <span style="flex: 0 0 60px; text-align: right; color: #000;">$${item.price.toFixed(2)}</span>
+                        </div>
+                    `;
+                });
+                
+                receiptHTML += `
+                        </div>
+                        
+                        <div class="divider" style="border-top: 1px dashed #aaa; margin: 8px 0;"></div>
+                        
+                        <div style="text-align: right; font-size: 12px; color: #000;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                                <span style="color: #000;">Subtotal</span>
+                                <span style="color: #000;">$${subtotal.toFixed(2)}</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                                <span style="color: #000;">Tax</span>
+                                <span style="color: #000;">$${taxAmount.toFixed(2)}</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; font-weight: bold; margin-top: 5px; padding-top: 5px; border-top: 1px dashed #aaa;">
+                                <span style="color: #000;">Total</span>
+                                <span style="color: #000;">$${amount.toFixed(2)}</span>
+                            </div>
+                        </div>
+                        
+                        ${isProQuality ? `
+                        <div class="divider" style="border-top: 1px dashed #aaa; margin: 8px 0;"></div>
+                        
+                        <div style="text-align: left; font-size: 12px; color: #000;">
+                            <p style="margin: 0; color: #000;">PURCHASE</p>
+                            <p style="margin: 0; color: #000;">${policy.paymentMethod.includes('AMEX') ? 'AMERICAN EXPRESS' : policy.paymentMethod.includes('VISA') ? 'VISA' : policy.paymentMethod.includes('MC') ? 'MASTERCARD' : 'CREDIT CARD'}</p>
+                            <p style="margin: 0; color: #000;">CARD #: XXXXXXXXXXXX${policy.paymentMethod.includes('•••') ? policy.paymentMethod.split('•••')[1] : '1009'}</p>
+                            <p style="margin: 0; color: #000;">AUTH CODE: ${authCode}</p>
+                        </div>
+                        
+                        <div class="divider" style="border-top: 1px dashed #aaa; margin: 8px 0;"></div>
+                        
+                        <div style="text-align: center; font-size: 12px; color: #000;">
+                            <p style="margin: 0; color: #000;">Gratuities Not Included</p>
+                            <p style="margin: 2px 0; color: #000;">For Your Convenience</p>
+                            <div style="display: flex; justify-content: space-between; margin: 2px 50px;">
+                                <span style="color: #000;">18% = </span>
+                                <span style="color: #000;">$${(subtotal * 0.18).toFixed(2)}</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin: 2px 50px;">
+                                <span style="color: #000;">20% = </span>
+                                <span style="color: #000;">$${(subtotal * 0.20).toFixed(2)}</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin: 2px 50px;">
+                                <span style="color: #000;">22% = </span>
+                                <span style="color: #000;">$${(subtotal * 0.22).toFixed(2)}</span>
+                            </div>
+                            <p style="margin: 6px 0 2px 0; font-weight: bold; color: #000;">Merchant Copy</p>
+                        </div>
+                        ` : ''}
+                    </div>
+                `;
+                
+                return receiptHTML;
+            }
+            
             // Generate Uber/Lyft style receipt
             function generateRideshareReceipt(expense, policy, isProQuality) {
                 const amount = parseFloat(expense.amount.replace('$', '').replace(',', ''));
-                const date = new Date(expense.date);
-                const formattedDate = formatDate(date);
-                const formattedTime = formatTime(date);
+                let date;
+                if (typeof expense.date === 'string') {
+                    if (expense.date.includes('/')) {
+                        const parts = expense.date.split('/');
+                        date = new Date(parseInt(parts[2]), parseInt(parts[0]) - 1, parseInt(parts[1]));
+                    } else {
+                        date = new Date(expense.date);
+                    }
+                } else {
+                    date = expense.date || new Date();
+                }
+                
+                // Generate random time
+                const hours = Math.floor(Math.random() * 12) + 1;
+                const minutes = Math.floor(Math.random() * 60);
+                const ampm = Math.random() > 0.5 ? 'AM' : 'PM';
+                const formattedTime = `${hours}:${minutes.toString().padStart(2, '0')} ${ampm}`;
                 
                 // Calculate components
                 const subtotal = parseFloat((amount * 0.70).toFixed(2));
@@ -1669,6 +3232,9 @@ $21.70`;
                 const driverNames = ["Michael", "David", "Jennifer", "Maria", "John", "Robert", "Francisco", "Sarah", "James"];
                 const driverName = driverNames[Math.floor(Math.random() * driverNames.length)];
                 
+                // Format date properly
+                const formattedDate = formatDate(date);
+                
                 // Generate HTML for receipt
                 let receiptHTML = `
                     <div data-quality="${policy.receiptQuality}" class="uber-receipt receipt-text" style="font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif; max-width: 400px; margin: 0 auto; padding: 20px; color: #000;">
@@ -1684,7 +3250,7 @@ $21.70`;
                         </div>
                         
                         <div style="margin-bottom: 20px; border: 1px solid #eee; border-radius: 8px; padding: 12px;">
-                            <p style="margin: 0 0 8px 0; font-size: 13px; color: #666;">${formatTime(new Date(date.getTime() - durationMinutes * 60000))} | ${pickupLocation}</p>
+                            <p style="margin: 0 0 8px 0; font-size: 13px; color: #666;">${hours-1}:${minutes.toString().padStart(2, '0')} ${ampm} | ${pickupLocation}</p>
                             <p style="margin: 0; font-size: 13px; color: #666;">${formattedTime} | ${dropoffLocation}</p>
                             <div style="margin-top: 12px; font-size: 14px; color: #000;">
                                 <span>${isUber ? 'UberX' : 'Lyft'}</span>
@@ -1748,7 +3314,18 @@ $21.70`;
             // Generate Hilton receipt
             function generateHiltonReceipt(expense, policy, isProQuality) {
                 const amount = parseFloat(expense.amount.replace('$', '').replace(',', ''));
-                const date = new Date(expense.date);
+                let date;
+                if (typeof expense.date === 'string') {
+                    if (expense.date.includes('/')) {
+                        const parts = expense.date.split('/');
+                        date = new Date(parseInt(parts[2]), parseInt(parts[0]) - 1, parseInt(parts[1]));
+                    } else {
+                        date = new Date(expense.date);
+                    }
+                } else {
+                    date = expense.date || new Date();
+                }
+                
                 const nights = expense.nights || 1;
                 
                 // Calculate check-in date (checkout date - nights)
@@ -1769,6 +3346,10 @@ $21.70`;
                 // Room number (random 3-digit number)
                 const roomNumber = Math.floor(100 + Math.random() * 900);
                 
+                // Format dates properly
+                const formattedCheckInDate = formatDate(checkInDate);
+                const formattedCheckOutDate = formatDate(date);
+                
                 // Generate HTML for receipt
                 let receiptHTML = `
                     <div data-quality="${policy.receiptQuality}" class="hilton-receipt receipt-text" style="font-family: 'Georgia', serif; max-width: 680px; margin: 0 auto; padding: 20px; color: #000;">
@@ -1776,13 +3357,8 @@ $21.70`;
                             <div>
                                 <h2 style="margin: 0; font-size: 22px; color: #00538A;">Hilton ${expense.location.split(',')[0]}</h2>
                                 <p style="margin: 4px 0; font-size: 13px; color: #555;">${expense.location}</p>
-                                ${isProQuality ? `<p style="margin: 2px 0; font-size: 12px; color: #555;">Tel: (XXX) XXX-XXXX | Email: XXXX_GM@hilton.com</p>` : ''}
+                                ${isProQuality ? `<p style="margin: 2px 0; font-size: 12px; color: #555;">Tel: (123) 456-7890 | Email: info@hilton.com</p>` : ''}
                             </div>
-                            ${isProQuality ? `
-                            <div>
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" alt="Hilton Logo" style="width: 100px; opacity: 0.0;">
-                            </div>
-                            ` : ''}
                         </div>
                         
                         <div style="border-bottom: 1px solid #ddd; margin-bottom: 15px; padding-bottom: 10px;">
@@ -1795,8 +3371,8 @@ $21.70`;
                                 <h4 style="margin: 0 0 8px 0; font-size: 14px; color: #00538A;">Primary Guest</h4>
                                 <p style="margin: 2px 0; font-size: 13px; color: #333;"><strong>${policy.customerName.toUpperCase()}</strong></p>
                                 ${isProQuality ? `
-                                <p style="margin: 2px 0; font-size: 13px; color: #555;">718 EVLEN RD</p>
-                                <p style="margin: 2px 0; font-size: 13px; color: #555;">PLYMOUTH MEETING PA 19462</p>
+                                <p style="margin: 2px 0; font-size: 13px; color: #555;">123 MAIN ST</p>
+                                <p style="margin: 2px 0; font-size: 13px; color: #555;">ANYTOWN, CA 90210</p>
                                 ` : ''}
                             </div>
                             
@@ -1805,11 +3381,11 @@ $21.70`;
                                 <table style="font-size: 13px; color: #333; width: 100%;">
                                     <tr>
                                         <td style="padding: 2px 10px 2px 0; color: #333;">Check In Date</td>
-                                        <td style="padding: 2px 0; color: #333;">${formatDate(checkInDate, 'MMM DD, YYYY')}</td>
+                                        <td style="padding: 2px 0; color: #333;">${formattedCheckInDate}</td>
                                     </tr>
                                     <tr>
                                         <td style="padding: 2px 10px 2px 0; color: #333;">Check Out Date</td>
-                                        <td style="padding: 2px 0; color: #333;">${formatDate(date, 'MMM DD, YYYY')}</td>
+                                        <td style="padding: 2px 0; color: #333;">${formattedCheckOutDate}</td>
                                     </tr>
                                     <tr>
                                         <td style="padding: 2px 10px 2px 0; color: #333;">Room</td>
@@ -1847,7 +3423,7 @@ $21.70`;
                 for (let i = 0; i < nights; i++) {
                     const currentDate = new Date(checkInDate);
                     currentDate.setDate(currentDate.getDate() + i);
-                    const formattedCurrentDate = formatDate(currentDate, 'MMM DD, YYYY');
+                    const formattedCurrentDate = formatDate(currentDate);
                     
                     receiptHTML += `
                         <tr>
@@ -1908,7 +3484,7 @@ $21.70`;
                 // Payment line
                 receiptHTML += `
                     <tr>
-                        <td style="padding: 8px; border-bottom: 1px solid #eee; color: #333;">${formatDate(date, 'MMM DD, YYYY')}</td>
+                        <td style="padding: 8px; border-bottom: 1px solid #eee; color: #333;">${formattedCheckOutDate}</td>
                         <td style="padding: 8px; border-bottom: 1px solid #eee; color: #333;">Payments</td>
                         <td style="padding: 8px; border-bottom: 1px solid #eee; color: #333;">${policy.paymentMethod}</td>
                         <td style="padding: 8px; text-align: right; border-bottom: 1px solid #eee; color: #333;">($${amount.toFixed(2)})</td>
@@ -1931,7 +3507,7 @@ $21.70`;
                         
                         <div style="margin-top: 20px; text-align: center; color: #666; font-size: 11px;">
                             <p style="margin: 0;">Check In Time: 03:00 PM | Check Out Time: 12:00 PM</p>
-                            <p style="margin: 5px 0;">Reservations: hiltonhotels.com or +1-800-HILTONS</p>
+                            <p style="margin: 5px 0;">Reservations: hiltonhotels.com or 1-800-HILTONS</p>
                         </div>
                     </div>
                 `;
@@ -1942,16 +3518,27 @@ $21.70`;
             // Generate Marriott/Aloft receipt
             function generateMarriottReceipt(expense, policy, isProQuality) {
                 const amount = parseFloat(expense.amount.replace('$', '').replace(',', ''));
-                const date = new Date(expense.date);
+                let date;
+                if (typeof expense.date === 'string') {
+                    if (expense.date.includes('/')) {
+                        const parts = expense.date.split('/');
+                        date = new Date(parseInt(parts[2]), parseInt(parts[0]) - 1, parseInt(parts[1]));
+                    } else {
+                        date = new Date(expense.date);
+                    }
+                } else {
+                    date = expense.date || new Date();
+                }
+                
                 const nights = expense.nights || 1;
                 
                 // Calculate check-in date (checkout date - nights)
                 const checkInDate = new Date(date);
                 checkInDate.setDate(checkInDate.getDate() - nights);
                 
-                // Format dates in the style used by Marriott
-                const checkInFormatted = formatDate(checkInDate, 'DD-MMM-YY HH:MM');
-                const checkOutFormatted = formatDate(date, 'DD-MMM-YY');
+                // Format dates properly
+                const formattedCheckInDate = formatDate(checkInDate, 'DD-MMM-YY');
+                const formattedCheckOutDate = formatDate(date, 'DD-MMM-YY');
                 
                 // Generate guest number and other identifiers
                 const guestNumber = Math.floor(100000 + Math.random() * 900000);
@@ -1979,10 +3566,10 @@ $21.70`;
                     <div data-quality="${policy.receiptQuality}" class="marriott-receipt receipt-text" style="font-family: Arial, sans-serif; max-width: 680px; margin: 0 auto; padding: 20px; color: #000;">
                         <div style="margin-bottom: 15px;">
                             <h2 style="margin: 0; font-size: 18px; color: #000;">${hotelName}</h2>
-                            <p style="margin: 4px 0; font-size: 13px; color: #333;">100-15 Ditmars Blvd</p>
+                            <p style="margin: 4px 0; font-size: 13px; color: #333;">100 Main Street</p>
                             <p style="margin: 4px 0; font-size: 13px; color: #333;">${expense.location}</p>
                             <p style="margin: 4px 0; font-size: 13px; color: #333;">United States</p>
-                            ${isProQuality ? `<p style="margin: 4px 0; font-size: 13px; color: #333;">Tel: XXX-XXX-XXXX Fax: XXX-XXX-XXXX</p>` : ''}
+                            ${isProQuality ? `<p style="margin: 4px 0; font-size: 13px; color: #333;">Tel: (123) 456-7890 Fax: (123) 456-7891</p>` : ''}
                         </div>
                         
                         <div style="display: flex; justify-content: space-between; margin-bottom: 15px;">
@@ -2002,11 +3589,11 @@ $21.70`;
                                     </tr>
                                     <tr>
                                         <td style="padding: 3px; color: #000;">Arrive Date</td>
-                                        <td style="padding: 3px; color: #000;">${checkInFormatted}</td>
+                                        <td style="padding: 3px; color: #000;">${formattedCheckInDate}</td>
                                     </tr>
                                     <tr>
                                         <td style="padding: 3px; color: #000;">Depart Date</td>
-                                        <td style="padding: 3px; color: #000;">${checkOutFormatted}</td>
+                                        <td style="padding: 3px; color: #000;">${formattedCheckOutDate}</td>
                                     </tr>
                                     <tr>
                                         <td style="padding: 3px; color: #000;">No. Of Guest</td>
@@ -2046,42 +3633,42 @@ $21.70`;
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td style="padding: 8px; color: #000;">${formatDate(checkInDate, 'DD-MMM-YY')}</td>
+                                    <td style="padding: 8px; color: #000;">${formattedCheckInDate}</td>
                                     <td style="padding: 8px; color: #000;">RT${roomNumber}</td>
                                     <td style="padding: 8px; color: #000;">Room Chrg - Standard Retail</td>
                                     <td style="padding: 8px; text-align: right; color: #000;">${roomCharge.toFixed(2)}</td>
                                     <td style="padding: 8px; text-align: right; color: #000;"></td>
                                 </tr>
                                 <tr>
-                                    <td style="padding: 8px; color: #000;">${formatDate(checkInDate, 'DD-MMM-YY')}</td>
+                                    <td style="padding: 8px; color: #000;">${formattedCheckInDate}</td>
                                     <td style="padding: 8px; color: #000;">RT${roomNumber}</td>
                                     <td style="padding: 8px; color: #000;">State Tax</td>
                                     <td style="padding: 8px; text-align: right; color: #000;">${stateTax.toFixed(2)}</td>
                                     <td style="padding: 8px; text-align: right; color: #000;"></td>
                                 </tr>
                                 <tr>
-                                    <td style="padding: 8px; color: #000;">${formatDate(checkInDate, 'DD-MMM-YY')}</td>
+                                    <td style="padding: 8px; color: #000;">${formattedCheckInDate}</td>
                                     <td style="padding: 8px; color: #000;">RT${roomNumber}</td>
                                     <td style="padding: 8px; color: #000;">City/Local Tax</td>
                                     <td style="padding: 8px; text-align: right; color: #000;">${cityTax.toFixed(2)}</td>
                                     <td style="padding: 8px; text-align: right; color: #000;"></td>
                                 </tr>
                                 <tr>
-                                    <td style="padding: 8px; color: #000;">${formatDate(checkInDate, 'DD-MMM-YY')}</td>
+                                    <td style="padding: 8px; color: #000;">${formattedCheckInDate}</td>
                                     <td style="padding: 8px; color: #000;">RT${roomNumber}</td>
                                     <td style="padding: 8px; color: #000;">Occupancy/Tourism</td>
                                     <td style="padding: 8px; text-align: right; color: #000;">${tourismFee.toFixed(2)}</td>
                                     <td style="padding: 8px; text-align: right; color: #000;"></td>
                                 </tr>
                                 <tr>
-                                    <td style="padding: 8px; color: #000;">${formatDate(checkInDate, 'DD-MMM-YY')}</td>
+                                    <td style="padding: 8px; color: #000;">${formattedCheckInDate}</td>
                                     <td style="padding: 8px; color: #000;">RT${roomNumber}</td>
                                     <td style="padding: 8px; color: #000;">Javits Center Tax</td>
                                     <td style="padding: 8px; text-align: right; color: #000;">${javitsFee.toFixed(2)}</td>
                                     <td style="padding: 8px; text-align: right; color: #000;"></td>
                                 </tr>
                                 <tr>
-                                    <td style="padding: 8px; color: #000;">${formatDate(date, 'DD-MMM-YYYY')}</td>
+                                    <td style="padding: 8px; color: #000;">${formattedCheckOutDate}</td>
                                     <td style="padding: 8px; color: #000;">VI</td>
                                     <td style="padding: 8px; color: #000;">${policy.paymentMethod.includes('VISA') ? 'Visa' : policy.paymentMethod.includes('AMEX') ? 'American Express' : policy.paymentMethod.includes('MC') ? 'MasterCard' : policy.paymentMethod.includes('DISC') ? 'Discover' : 'Credit Card'}</td>
                                     <td style="padding: 8px; text-align: right; color: #000;"></td>
@@ -2162,18 +3749,38 @@ $21.70`;
             // Generate Car Rental Receipt (Avis/Hertz style)
             function generateCarRentalReceipt(expense, policy, isProQuality) {
                 const amount = parseFloat(expense.amount.replace('$', '').replace(',', ''));
-                const date = new Date(expense.date);
+                let date;
+                if (typeof expense.date === 'string') {
+                    if (expense.date.includes('/')) {
+                        const parts = expense.date.split('/');
+                        date = new Date(parseInt(parts[2]), parseInt(parts[0]) - 1, parseInt(parts[1]));
+                    } else {
+                        date = new Date(expense.date);
+                    }
+                } else {
+                    date = expense.date || new Date();
+                }
+                
                 const days = expense.days || 1;
                 
                 // Calculate pickup date (return date - days)
                 const pickupDate = new Date(date);
                 pickupDate.setDate(pickupDate.getDate() - days);
                 
-                // Format dates
-                const pickupFormatted = formatDate(pickupDate, 'MMM DD, YYYY');
-                const pickupTimeFormatted = formatTime(pickupDate);
-                const returnFormatted = formatDate(date, 'MMM DD, YYYY');
-                const returnTimeFormatted = formatTime(date);
+                // Format dates properly
+                const formattedPickupDate = formatDate(pickupDate);
+                const formattedReturnDate = formatDate(date);
+                
+                // Random time generation
+                const pickupHours = Math.floor(Math.random() * 12) + 1;
+                const pickupMinutes = Math.floor(Math.random() * 60);
+                const pickupAMPM = Math.random() > 0.5 ? 'AM' : 'PM';
+                const pickupTime = `${pickupHours}:${pickupMinutes.toString().padStart(2, '0')}${pickupAMPM}`;
+                
+                const returnHours = Math.floor(Math.random() * 12) + 1;
+                const returnMinutes = Math.floor(Math.random() * 60);
+                const returnAMPM = Math.random() > 0.5 ? 'AM' : 'PM';
+                const returnTime = `${returnHours}:${returnMinutes.toString().padStart(2, '0')}${returnAMPM}`;
                 
                 // Create agreement number and other identifiers
                 const agreementNumber = Math.floor(100000000 + Math.random() * 900000000);
@@ -2304,7 +3911,7 @@ $21.70`;
                             <table style="width: 100%; font-size: 13px; color: #000;">
                                 <tr>
                                     <td style="padding: 2px 0; vertical-align: top; width: 150px; color: #000;">Pickup Date/Time:</td>
-                                    <td style="padding: 2px 0; color: #000;">${pickupFormatted}@${pickupTimeFormatted}</td>
+                                    <td style="padding: 2px 0; color: #000;">${formattedPickupDate}@${pickupTime}</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 2px 0; vertical-align: top; color: #000;">Pickup Location:</td>
@@ -2312,7 +3919,7 @@ $21.70`;
                                 </tr>
                                 <tr>
                                     <td style="padding: 2px 0; vertical-align: top; color: #000;">Return Date/Time:</td>
-                                    <td style="padding: 2px 0; color: #000;">${returnFormatted}@${returnTimeFormatted}</td>
+                                    <td style="padding: 2px 0; color: #000;">${formattedReturnDate}@${returnTime}</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 2px 0; vertical-align: top; color: #000;">Return Location:</td>
@@ -2460,108 +4067,76 @@ $21.70`;
             // Generate Generic receipt
             function generateGenericReceipt(expense, policy, isProQuality) {
                 const amount = parseFloat(expense.amount.replace('$', '').replace(',', ''));
-                const date = new Date(expense.date);
+                let date;
+                if (typeof expense.date === 'string') {
+                    if (expense.date.includes('/')) {
+                        const parts = expense.date.split('/');
+                        date = new Date(parseInt(parts[2]), parseInt(parts[0]) - 1, parseInt(parts[1]));
+                    } else {
+                        date = new Date(expense.date);
+                    }
+                } else {
+                    date = expense.date || new Date();
+                }
+                
+                // Format date properly
                 const formattedDate = formatDate(date);
-                const formattedTime = formatTime(date);
+                
+                // Generate random time
+                const hours = Math.floor(Math.random() * 12) + 1;
+                const minutes = Math.floor(Math.random() * 60);
+                const ampm = Math.random() > 0.5 ? 'AM' : 'PM';
+                const formattedTime = `${hours}:${minutes.toString().padStart(2, '0')} ${ampm}`;
                 
                 // Calculate receipt components based on tax rate
-                const subtotal = parseFloat((amount / (1 + policy.taxRate / 100)).toFixed(2));
+                const taxRate = policy.taxRate;
+                const subtotal = parseFloat((amount / (1 + taxRate / 100)).toFixed(2));
                 const tax = parseFloat((amount - subtotal).toFixed(2));
                 
                 // Generate random receipt details
                 const receiptNumber = generateRandomReceiptNumber();
                 
-                // Check if it's a food/meal receipt
-                const isMeal = expense.type.includes('Dinner') || expense.type.includes('Lunch') || expense.type.includes('Breakfast');
-                
                 // Generate receipt items
                 let receiptItems = [];
                 
-                if (isMeal) {
-                    // Food receipt
-                    const mealType = expense.type.includes('Dinner') ? 'Dinner' : 
-                                   expense.type.includes('Lunch') ? 'Lunch' : 'Breakfast';
+                // Generate menu items based on receipt quality
+                if (isProQuality) {
+                    // More detailed for premium receipts
+                    const numItems = Math.floor(Math.random() * 3) + 2; // 2-4 items
+                    let remainingSubtotal = subtotal;
                     
-                    // Generate menu items based on meal type and receipt quality
-                    if (isProQuality) {
-                        // More detailed for premium receipts
-                        const mainDishPrice = parseFloat((subtotal * 0.6).toFixed(2));
-                        const sideDishPrice = parseFloat((subtotal * 0.2).toFixed(2));
-                        const beveragePrice = parseFloat((subtotal * 0.15).toFixed(2));
-                        const extraPrice = parseFloat((subtotal - mainDishPrice - sideDishPrice - beveragePrice).toFixed(2));
+                    for (let i = 0; i < numItems; i++) {
+                        let itemPrice;
                         
-                        receiptItems.push({
-                            name: generateRandomFoodItem(mealType),
-                            quantity: 1,
-                            price: mainDishPrice
-                        });
-                        
-                        receiptItems.push({
-                            name: generateRandomFoodItem(mealType, true),
-                            quantity: 1,
-                            price: sideDishPrice
-                        });
-                        
-                        receiptItems.push({
-                            name: mealType === 'Breakfast' ? 'Coffee/Tea' : 'Beverage',
-                            quantity: 1,
-                            price: beveragePrice
-                        });
-                        
-                        // Add optional alcohol for dinner if appropriate
-                        if (mealType === 'Dinner' && policy.allowAlcohol && amount > 30) {
-                            receiptItems.push({
-                                name: generateRandomAlcoholItem(),
-                                quantity: 1,
-                                price: extraPrice
-                            });
+                        if (i === numItems - 1) {
+                            // Last item gets remainder
+                            itemPrice = parseFloat(remainingSubtotal.toFixed(2));
                         } else {
-                            // Add an extra if not alcohol
-                            receiptItems.push({
-                                name: mealType === 'Breakfast' ? 'Fresh Fruit' : 'Dessert',
-                                quantity: 1,
-                                price: extraPrice
-                            });
+                            // Random portion of remaining subtotal
+                            const portion = 0.3 + Math.random() * 0.4; // 30-70% of remaining
+                            itemPrice = parseFloat((remainingSubtotal * portion).toFixed(2));
+                            remainingSubtotal -= itemPrice;
                         }
-                    } else {
-                        // Simpler for basic receipts
-                        receiptItems.push({
-                            name: generateRandomFoodItem(mealType),
-                            quantity: 1,
-                            price: parseFloat((subtotal * 0.7).toFixed(2))
-                        });
                         
                         receiptItems.push({
-                            name: generateRandomFoodItem(mealType, true),
-                            quantity: 1,
-                            price: parseFloat((subtotal * 0.3).toFixed(2))
+                            name: `Item ${i+1}`,
+                            quantity: i === 1 ? 2 : 1, // Make one item have quantity 2
+                            price: itemPrice
                         });
                     }
                 } else {
-                    // Generic receipt items
-                    if (isProQuality) {
-                        // More detailed breakdown for premium
-                        for (let i = 0; i < 3; i++) {
-                            receiptItems.push({
-                                name: `Item ${i+1}`,
-                                quantity: i === 1 ? 2 : 1, // Make one item have quantity 2
-                                price: parseFloat((subtotal / (i === 1 ? 4 : 2)).toFixed(2))
-                            });
-                        }
-                    } else {
-                        // Basic receipt
-                        receiptItems.push({
-                            name: "Item 1",
-                            quantity: 1,
-                            price: parseFloat((subtotal * 0.7).toFixed(2))
-                        });
-                        
-                        receiptItems.push({
-                            name: "Item 2",
-                            quantity: 1,
-                            price: parseFloat((subtotal * 0.3).toFixed(2))
-                        });
-                    }
+                    // Simpler for basic receipts
+                    receiptItems.push({
+                        name: "Item 1",
+                        quantity: 1,
+                        price: parseFloat((subtotal * 0.7).toFixed(2))
+                    });
+                    
+                    receiptItems.push({
+                        name: "Item 2",
+                        quantity: 1,
+                        price: parseFloat((subtotal * 0.3).toFixed(2))
+                    });
                 }
                 
                 // Generate HTML for receipt items
@@ -2609,7 +4184,7 @@ $21.70`;
                                     <td style="text-align: right; padding: 4px 0; color: #000;">$${subtotal.toFixed(2)}</td>
                                 </tr>
                                 <tr>
-                                    <td style="text-align: left; padding: 4px 0; color: #000;">Tax (${policy.taxRate}%)</td>
+                                    <td style="text-align: left; padding: 4px 0; color: #000;">Tax (${taxRate}%)</td>
                                     <td style="text-align: right; padding: 4px 0; color: #000;">$${tax.toFixed(2)}</td>
                                 </tr>
                                 <tr>
@@ -2636,47 +4211,6 @@ $21.70`;
             // Helper functions for generating realistic receipt details
             function generateRandomReceiptNumber() {
                 return `INV-${Math.floor(10000 + Math.random() * 90000)}`;
-            }
-
-            function formatDate(date, format = 'MMM DD, YYYY') {
-                const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-                const monthsLong = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-                
-                const day = date.getDate();
-                const month = date.getMonth();
-                const year = date.getFullYear();
-                const hours = date.getHours();
-                const minutes = date.getMinutes();
-                
-                let result = format;
-                
-                // Replace patterns
-                result = result.replace('YYYY', year);
-                result = result.replace('YY', String(year).slice(-2));
-                result = result.replace('MMMM', monthsLong[month]);
-                result = result.replace('MMM', months[month]);
-                result = result.replace('MM', String(month + 1).padStart(2, '0'));
-                result = result.replace('M', month + 1);
-                result = result.replace('DD', String(day).padStart(2, '0'));
-                result = result.replace('D', day);
-                result = result.replace('HH', String(hours).padStart(2, '0'));
-                result = result.replace('H', hours);
-                result = result.replace('MM', String(minutes).padStart(2, '0'));
-                result = result.replace('M', minutes);
-                
-                return result;
-            }
-
-            function formatTime(date) {
-                // Generate a random time appropriate for the expense type
-                let hours = Math.floor(Math.random() * 12) + 7; // 7am to 7pm
-                const minutes = Math.floor(Math.random() * 60);
-                const ampm = hours >= 12 ? 'PM' : 'AM';
-                
-                hours = hours % 12;
-                hours = hours ? hours : 12; // the hour '0' should be '12'
-                
-                return `${hours}:${minutes.toString().padStart(2, '0')} ${ampm}`;
             }
 
             function generateRandomFoodItem(mealType, isSide = false) {
